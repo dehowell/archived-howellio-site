@@ -6,11 +6,12 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const filename = createFilePath({ node, getNode, basePath: `pages` })
-    const [, year, month, day, title] = filename.match(
-      /^\/([\d]{4})-([\d]{2})-([\d]{2})-{1}(.+)\/$/
+    const [, date, year, month, day, title] = filename.match(
+      /^\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
     );
     const slug = `/${year}/${month}/${day}/${title}/`;
     createNodeField({ node, name: `slug`, value: slug });
+    createNodeField({ node, name: `date`, value: new Date(date)});
   }
 };
 
@@ -21,7 +22,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   return graphql(`{
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [fields___date] }
       limit: 1000
     ) {
       edges {
@@ -30,11 +31,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           html
           id
           frontmatter {
-            date
             title
           }
           fields {
             slug
+            date
           }
         }
       }
