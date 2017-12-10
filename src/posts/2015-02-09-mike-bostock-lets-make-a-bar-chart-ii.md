@@ -23,7 +23,6 @@ with the `<g>` and saves the selection of all these elements, positioned along
 the y-axis according to their order in the data set.
 
 ```javascript
-
 var bar = chart.selectAll("g")
     .data(data)
   .enter().append("g")
