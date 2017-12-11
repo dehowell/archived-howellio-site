@@ -1,8 +1,8 @@
---
+---
 layout: post
 title: "Building the Binomial Distribution From Scratch"
 date: 2016-09-26T19:14:36-04:00
---
+---
 
 This is the binomial distribution, which represents the probability that you will have _k_ successes out of _n_ trials, when the probability of a successful trial is _p_.
 
