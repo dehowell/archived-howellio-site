@@ -18,8 +18,8 @@ My theoretical perspective has been heavily influenced by [David Chapman](https:
 
 I particularly like [Kenneth Folk's](http://kennethfolkdharma.com) framing of meditation and Buddhist practice as building _contemplative fitness_. When I'm practicing consistently[^3], it really does feel like weightlifting for patience. I meditate so that I can be comfortably present with raw reality, accept the disunity of self, and embrace the chaotic interdependence of life.
 
-> Therefore, become one with the fire when there is no escaping it.
->  – Philip Kapleau, [_The Three Pillars of Zen_](https://www.goodreads.com/book/show/19545272-the-three-pillars-of-zen).
+> Therefore, become one with the fire when there is no escaping it.  
+> – Philip Kapleau, [_The Three Pillars of Zen_](https://www.goodreads.com/book/show/19545272-the-three-pillars-of-zen).
 
 [^1]:	Reincarnation, for example.
 

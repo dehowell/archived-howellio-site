@@ -17,7 +17,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-smartypants`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -42,7 +41,14 @@ module.exports = {
               // Defaults to false.
               sizeByPixelDensity: true,
             },
-          }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+            }
+          },
+          `gatsby-remark-smartypants`,
         ]
       }
     },
