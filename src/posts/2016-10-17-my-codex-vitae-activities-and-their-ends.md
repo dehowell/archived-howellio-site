@@ -44,5 +44,5 @@ I am not my thoughts. My thoughts are sensations, like sights and sounds. When I
 
 Who is the "I" that would even identify with thoughts?
 
-[1]: {% post_url 2016-10-09-my-codex-vitae-beliefs %}
+[1]: /2016/10/09/my-codex-vitae-beliefs/
 [2]: /codex-vitae/

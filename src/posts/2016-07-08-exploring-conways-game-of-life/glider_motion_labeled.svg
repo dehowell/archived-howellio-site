@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="362px" height="108px" viewBox="0 0 362 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>glider_motion</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="surface33" transform="translate(1.000000, 1.000000)">
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="0 106 360 106 360 14 0 14"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="1.671875 99.289063 21.753906 99.289063 21.753906 79.207031 1.671875 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="21.753906 99.289063 41.835938 99.289063 41.835938 79.207031 21.753906 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="41.835938 99.289063 61.914062 99.289063 61.914062 79.207031 41.835938 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="61.914062 99.289063 81.996094 99.289063 81.996094 79.207031 61.914062 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="1.671875 79.207031 21.753906 79.207031 21.753906 59.128906 1.671875 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="21.753906 79.207031 41.835938 79.207031 41.835938 59.128906 21.753906 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="41.835938 79.207031 61.914062 79.207031 61.914062 59.128906 41.835938 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="61.914062 79.207031 81.996094 79.207031 81.996094 59.128906 61.914062 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="1.671875 59.128906 21.753906 59.128906 21.753906 39.046875 1.671875 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="21.753906 59.128906 41.835938 59.128906 41.835938 39.046875 21.753906 39.046875"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="41.835938 59.128906 61.914062 59.128906 61.914062 39.046875 41.835938 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="61.914062 59.128906 81.996094 59.128906 81.996094 39.046875 61.914062 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="1.671875 39.046875 21.753906 39.046875 21.753906 18.964844 1.671875 18.964844"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="21.753906 39.046875 41.835938 39.046875 41.835938 18.964844 21.753906 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="41.835938 39.046875 61.914062 39.046875 61.914062 18.964844 41.835938 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="61.914062 39.046875 81.996094 39.046875 81.996094 18.964844 61.914062 18.964844"></polygon>
+            <path d="M1.671875,18.964844 L81.996094,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M1.671875,39.046875 L81.996094,39.046875" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M1.671875,59.128906 L81.996094,59.128906" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M1.671875,79.207031 L81.996094,79.207031" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M1.671875,99.289062 L81.996094,99.289062" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M1.671875,99.289062 L1.671875,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M21.753906,99.289062 L21.753906,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M41.835938,99.289062 L41.835938,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M61.914062,99.289062 L61.914062,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M81.996094,99.289062 L81.996094,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="93.117187 99.289063 113.199219 99.289063 113.199219 79.207031 93.117187 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="113.199219 99.289063 133.277344 99.289063 133.277344 79.207031 113.199219 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="133.277344 99.289063 153.359375 99.289063 153.359375 79.207031 133.277344 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="153.359375 99.289063 173.441406 99.289063 173.441406 79.207031 153.359375 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="93.117187 79.207031 113.199219 79.207031 113.199219 59.128906 93.117187 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="113.199219 79.207031 133.277344 79.207031 133.277344 59.128906 113.199219 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="133.277344 79.207031 153.359375 79.207031 153.359375 59.128906 133.277344 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="153.359375 79.207031 173.441406 79.207031 173.441406 59.128906 153.359375 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="93.117187 59.128906 113.199219 59.128906 113.199219 39.046875 93.117187 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="113.199219 59.128906 133.277344 59.128906 133.277344 39.046875 113.199219 39.046875"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="133.277344 59.128906 153.359375 59.128906 153.359375 39.046875 133.277344 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="153.359375 59.128906 173.441406 59.128906 173.441406 39.046875 153.359375 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="93.117187 39.046875 113.199219 39.046875 113.199219 18.964844 93.117187 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="113.199219 39.046875 133.277344 39.046875 133.277344 18.964844 113.199219 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="133.277344 39.046875 153.359375 39.046875 153.359375 18.964844 133.277344 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="153.359375 39.046875 173.441406 39.046875 173.441406 18.964844 153.359375 18.964844"></polygon>
+            <path d="M93.117188,18.964844 L173.441406,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M93.117188,39.046875 L173.441406,39.046875" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M93.117188,59.128906 L173.441406,59.128906" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M93.117188,79.207031 L173.441406,79.207031" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M93.117188,99.289062 L173.441406,99.289062" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M93.117188,99.289062 L93.117188,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M113.199219,99.289062 L113.199219,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M133.277344,99.289062 L133.277344,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M153.359375,99.289062 L153.359375,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M173.441406,99.289062 L173.441406,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="184.558593 99.289063 204.640625 99.289063 204.640625 79.207031 184.558593 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="204.640625 99.289063 224.722656 99.289063 224.722656 79.207031 204.640625 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="224.722656 99.289063 244.800781 99.289063 244.800781 79.207031 224.722656 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="244.800781 99.289063 264.882812 99.289063 264.882812 79.207031 244.800781 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="184.558593 79.207031 204.640625 79.207031 204.640625 59.128906 184.558593 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="204.640625 79.207031 224.722656 79.207031 224.722656 59.128906 204.640625 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="224.722656 79.207031 244.800781 79.207031 244.800781 59.128906 224.722656 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="244.800781 79.207031 264.882812 79.207031 264.882812 59.128906 244.800781 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="184.558593 59.128906 204.640625 59.128906 204.640625 39.046875 184.558593 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="204.640625 59.128906 224.722656 59.128906 224.722656 39.046875 204.640625 39.046875"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="224.722656 59.128906 244.800781 59.128906 244.800781 39.046875 224.722656 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="244.800781 59.128906 264.882812 59.128906 264.882812 39.046875 244.800781 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="184.558593 39.046875 204.640625 39.046875 204.640625 18.964844 184.558593 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="204.640625 39.046875 224.722656 39.046875 224.722656 18.964844 204.640625 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="224.722656 39.046875 244.800781 39.046875 244.800781 18.964844 224.722656 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="244.800781 39.046875 264.882812 39.046875 264.882812 18.964844 244.800781 18.964844"></polygon>
+            <path d="M184.558594,18.964844 L264.882812,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M184.558594,39.046875 L264.882812,39.046875" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M184.558594,59.128906 L264.882812,59.128906" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M184.558594,79.207031 L264.882812,79.207031" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M184.558594,99.289062 L264.882812,99.289062" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M184.558594,99.289062 L184.558594,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M204.640625,99.289062 L204.640625,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M224.722656,99.289062 L224.722656,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M244.800781,99.289062 L244.800781,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M264.882812,99.289062 L264.882812,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="276.003907 99.289063 296.085938 99.289063 296.085938 79.207031 276.003907 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="296.085938 99.289063 316.164063 99.289063 316.164063 79.207031 296.085938 79.207031"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="316.164063 99.289063 336.246094 99.289063 336.246094 79.207031 316.164063 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="336.246094 99.289063 356.328125 99.289063 356.328125 79.207031 336.246094 79.207031"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="276.003907 79.207031 296.085938 79.207031 296.085938 59.128906 276.003907 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="296.085938 79.207031 316.164063 79.207031 316.164063 59.128906 296.085938 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="316.164063 79.207031 336.246094 79.207031 336.246094 59.128906 316.164063 59.128906"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="336.246094 79.207031 356.328125 79.207031 356.328125 59.128906 336.246094 59.128906"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="276.003907 59.128906 296.085938 59.128906 296.085938 39.046875 276.003907 39.046875"></polygon>
+            <polygon id="Shape" stroke="#000000" stroke-width="0.03" fill="#000000" points="296.085938 59.128906 316.164063 59.128906 316.164063 39.046875 296.085938 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="316.164063 59.128906 336.246094 59.128906 336.246094 39.046875 316.164063 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="336.246094 59.128906 356.328125 59.128906 356.328125 39.046875 336.246094 39.046875"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="276.003907 39.046875 296.085938 39.046875 296.085938 18.964844 276.003907 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="296.085938 39.046875 316.164063 39.046875 316.164063 18.964844 296.085938 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="316.164063 39.046875 336.246094 39.046875 336.246094 18.964844 316.164063 18.964844"></polygon>
+            <polygon id="Shape" stroke="#FFFFFF" stroke-width="0.03" fill="#FFFFFF" points="336.246094 39.046875 356.328125 39.046875 356.328125 18.964844 336.246094 18.964844"></polygon>
+            <path d="M276.003906,18.964844 L356.328125,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M276.003906,39.046875 L356.328125,39.046875" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M276.003906,59.128906 L356.328125,59.128906" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M276.003906,79.207031 L356.328125,79.207031" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M276.003906,99.289062 L356.328125,99.289062" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M276.003906,99.289062 L276.003906,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M296.085938,99.289062 L296.085938,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M316.164062,99.289062 L316.164062,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M336.246094,99.289062 L336.246094,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <path d="M356.328125,99.289062 L356.328125,18.964844" id="Shape" stroke="#9E9E9E"></path>
+            <text id="Step-1" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="25" y="11">Step 1</tspan>
+            </text>
+            <text id="Step-2" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="116" y="11">Step 2</tspan>
+            </text>
+            <text id="Step-4" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="299" y="11">Step 4</tspan>
+            </text>
+            <text id="Step-3" font-family="Helvetica" font-size="12" font-weight="normal" fill="#000000">
+                <tspan x="207" y="11">Step 3</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
