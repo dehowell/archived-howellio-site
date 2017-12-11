@@ -12,6 +12,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const slug = `/${year}/${month}/${day}/${title}/`;
     createNodeField({ node, name: `slug`, value: slug });
     createNodeField({ node, name: `date`, value: new Date(date)});
+    createNodeField({ node, name: `livehref`, value: `https://www.howell.io${slug}`})
   }
 };
 
@@ -36,6 +37,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           fields {
             slug
             date
+            livehref
           }
         }
       }
