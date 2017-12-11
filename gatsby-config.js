@@ -41,7 +41,8 @@ module.exports = {
               //
               // Defaults to false.
               sizeByPixelDensity: true,
-          },
+            },
+          }
         ]
       }
     },
