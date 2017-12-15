@@ -1,8 +1,5 @@
 ---
 title: "Mike Bostock: \"General Update Pattern, I\""
-layout: biblio
-tags:
-  - d3
 source:
   author: Mike Bostock
   url: http://bl.ocks.org/mbostock/3808218

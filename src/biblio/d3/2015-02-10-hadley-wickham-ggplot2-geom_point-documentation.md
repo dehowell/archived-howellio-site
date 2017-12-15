@@ -1,13 +1,9 @@
 ---
 title: "Hadley Wickham: ggplot2 geom_point documentation"
-layout: biblio
-tags:
-  - d3
 source:
   author: Hadley Wickham
   url: http://docs.ggplot2.org/current/geom_point.html
   title: "ggplot2: geom_point documentation"
-
 ---
 
 Although `ggplot2` is higher level library (and, *I know*, for R and not the web), there's some conceptual similarity between it and D3 that I think can help illuminate the latter.

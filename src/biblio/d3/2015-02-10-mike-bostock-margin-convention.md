@@ -1,8 +1,5 @@
 ---
 title: "Mike Bostock: \"Margin Convention\""
-layout: biblio
-tags:
-  - d3
 source:
   author: Mike Bostock
   url: http://bl.ocks.org/mbostock/3019563

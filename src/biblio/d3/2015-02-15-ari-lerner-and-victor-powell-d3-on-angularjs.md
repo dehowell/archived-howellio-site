@@ -1,8 +1,5 @@
 ---
 title: "Ari Lerner and Victor Powell: D3 on AngularJS"
-layout: biblio
-tags:
-  - d3
 source:
   author: Ari Lerner and Victor Powell
   url: https://leanpub.com/d3angularjs

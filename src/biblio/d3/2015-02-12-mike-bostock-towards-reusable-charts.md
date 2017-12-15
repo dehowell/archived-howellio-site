@@ -1,8 +1,5 @@
 ---
 title: "Mike Bostock: \"Towards Reusable Charts\""
-layout: biblio
-tags:
-  - d3
 source:
   author: Mike Bostock
   url: http://bost.ocks.org/mike/chart/
