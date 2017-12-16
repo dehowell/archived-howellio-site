@@ -13,6 +13,13 @@ module.exports = {
         name: `posts`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/src/biblio`,
+    //     name: `biblio`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-wordpress`,
       options: {

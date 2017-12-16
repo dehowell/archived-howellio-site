@@ -19,4 +19,4 @@ clearly:
 
 > Since method chaining can only be used to descend into the document hierarchy, use `var` to keep references to selections and go back up.
 
-It's just that it doesn't stick until you've been confused by a few examples - and start remembering which API methods return a new selection.
+It's just that it doesn't stick until you've been confused by a few examples -- and start remembering which API methods return a new selection.

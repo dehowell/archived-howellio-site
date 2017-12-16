@@ -5,7 +5,9 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
   if (node.internal.type === `MarkdownRemark`) {
+    console.log(node);
     const filename = createFilePath({ node, getNode, basePath: `pages` })
+    console.log(filename);
     const [, date, year, month, day, title] = filename.match(
       /^\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
     );
