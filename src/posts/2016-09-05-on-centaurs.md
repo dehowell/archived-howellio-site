@@ -26,8 +26,9 @@ I recently started a book club at work to discuss Vaughn Vernon's [_Implementing
 
 Domain-driven design feels to me like a way out of this trap, but at the same time I think about the end product in terms of _centaurs_ and the power of experts able to build their own tools. If you'd like to hear some blistering snark, ask any professional software developer how they feel about code developed by "academics"; but the amateur coder nonetheless has the potential to augment some other expertise to delightful ends.
 
-[^1]: I can't believe I never noticed this connection before today:
+[^1]:
+    I can't believe I never noticed this connection before today:
 
-> I have used a custom-designed application, created by the programmer Maciej Ceglowski at the National Institute for Technology and Liberal Education, and now use an off-the-shelf program called DEVONthink.
+    > I have used a custom-designed application, created by the programmer Maciej Ceglowski at the National Institute for Technology and Liberal Education, and now use an off-the-shelf program called DEVONthink.
 
-Maciej is the creator of [Pinboard](https://pinboard.in/u:dehowell) and a critical [gadfly](https://en.wikipedia.org/wiki/Social_gadfly "Social gadfly") to [the modern, ad-driven web](http://idlewords.com/talks/ "Talks by Maciej Ceglowski").
+    Maciej is the creator of [Pinboard](https://pinboard.in/u:dehowell) and a critical [gadfly](https://en.wikipedia.org/wiki/Social_gadfly "Social gadfly") to [the modern, ad-driven web](http://idlewords.com/talks/ "Talks by Maciej Ceglowski").
