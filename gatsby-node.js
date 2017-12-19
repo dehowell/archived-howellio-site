@@ -5,16 +5,24 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
   if (node.internal.type === `MarkdownRemark`) {
-    console.log(node);
-    const filename = createFilePath({ node, getNode, basePath: `pages` })
-    console.log(filename);
-    const [, date, year, month, day, title] = filename.match(
-      /^\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
-    );
-    const slug = `/${year}/${month}/${day}/${title}/`;
-    createNodeField({ node, name: `slug`, value: slug });
-    createNodeField({ node, name: `date`, value: new Date(date)});
-    createNodeField({ node, name: `livehref`, value: `https://www.howell.io${slug}`})
+    const fileNode = getNode(node.parent);
+    const markdownSource = fileNode.sourceInstanceName;
+
+    if (markdownSource === `posts`) {
+      const filename = createFilePath({ node, getNode, basePath: `pages` })
+      const [, date, year, month, day, title] = filename.match(
+        /^\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
+      );
+
+      const slug = `/${year}/${month}/${day}/${title}/`;
+      createNodeField({ node, name: `slug`, value: slug });
+      createNodeField({ node, name: `date`, value: new Date(date)});
+      createNodeField({ node, name: `livehref`, value: `https://www.howell.io${slug}`})
+    } else {
+      // TODO generate appropriate slug for other post sources
+      const slug = `d3`;
+      createNodeField({ node, name: `slug`, value: slug});
+    }
   }
 };
 
@@ -23,6 +31,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
 
+  // TODO Add another graphql query and combine with Promise.all
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
