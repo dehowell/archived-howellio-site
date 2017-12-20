@@ -1,6 +1,14 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
 
+var slugFromJekyllFilename = (filename) => {
+  const [, date, year, month, day, title] = filename.match(
+    /\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
+  );
+  const slug = `/${year}/${month}/${day}/${title}/`;
+  return [date, slug];
+};
+
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
@@ -9,18 +17,15 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const markdownSource = fileNode.sourceInstanceName;
 
     if (markdownSource === `posts`) {
-      const filename = createFilePath({ node, getNode, basePath: `pages` })
-      const [, date, year, month, day, title] = filename.match(
-        /^\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
-      );
+      const filename = createFilePath({ node, getNode, basePath: `pages` });
+      const [date, slug] = slugFromJekyllFilename(filename);
 
-      const slug = `/${year}/${month}/${day}/${title}/`;
-      createNodeField({ node, name: `slug`, value: slug });
+      createNodeField({ node, name: `slug`, value: slug});
       createNodeField({ node, name: `date`, value: new Date(date)});
       createNodeField({ node, name: `livehref`, value: `https://www.howell.io${slug}`})
     } else {
-      // TODO generate appropriate slug for other post sources
-      const slug = `d3`;
+      const filename = createFilePath({ node, getNode, basePath: `biblio` });
+      const [date, slug] = slugFromJekyllFilename(filename);
       createNodeField({ node, name: `slug`, value: slug});
     }
   }
