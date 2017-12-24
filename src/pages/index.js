@@ -12,7 +12,6 @@ export default function Index({ data }) {
               return (
                 <ul>
                   <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-                  <a href={post.fields.livehref}> [live]</a>
                 </ul>
               )
             })
@@ -31,7 +30,6 @@ query IndexQuery {
         fields {
           slug
           date(formatString: "MMMM DD, YYYY")
-          livehref
         }
         frontmatter {
           title
