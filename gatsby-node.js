@@ -31,7 +31,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     biblio: path.resolve(`src/templates/biblio-post.js`)
   }
 
-  return graphql(`{
+  const markdownPages = graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [fields___date] }
       limit: 1000
@@ -69,4 +69,23 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         })
       })
   });
+
+  const wordpressPages = graphql(`{
+    allWordpressPage {
+      edges {
+        node {
+          id
+          slug
+          status
+          link
+          title
+          content
+        }
+      }
+    }
+  }`).then(result => {
+    console.log(result);
+  });
+
+  return Promise.all([markdownPages, wordpressPages]);
 };

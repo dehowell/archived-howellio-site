@@ -20,21 +20,21 @@ module.exports = {
         name: `biblio`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-wordpress`,
-    //   options: {
-    //     baseUrl: `e6e0f28b.wordpress.com`,
-    //     protocol: `https`,
-    //     hostingWPCOM: true,
-    //     useACF: false,
-    //     auth: {
-    //       wpcom_app_clientSecret: process.env.WP_CLIENT_SECRET,
-    //       wpcom_app_clientId: process.env.WP_CLIENT_ID,
-    //       wpcom_user: process.env.WP_USER,
-    //       wpcom_pass: process.env.WP_PASS
-    //     }
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `e6e0f28b.wordpress.com`,
+        protocol: `https`,
+        hostingWPCOM: true,
+        useACF: false,
+        auth: {
+          wpcom_app_clientSecret: process.env.WP_CLIENT_SECRET,
+          wpcom_app_clientId: process.env.WP_CLIENT_ID,
+          wpcom_user: process.env.WP_USER,
+          wpcom_pass: process.env.WP_PASS
+        }
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
