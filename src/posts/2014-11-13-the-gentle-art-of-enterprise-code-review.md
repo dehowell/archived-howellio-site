@@ -1,9 +1,8 @@
 ---
 title: "The Gentle Art of Enterprise Code Review"
-layout: post
 ---
 
-Sarah Sharp, [The Gentle Art of Patch Review][ref1]:
+Sage Sharp, [The Gentle Art of Patch Review][ref1]:
 
 > [&hellip;] I propose a three-phase review process for maintainers:
 >
@@ -25,4 +24,4 @@ Resolving issues found in phase one or phase two requires courage on the part of
 
 But once you get the architecture ironed out, please do push for more semantic naming. It really does make life easier in long run!
 
-[ref1]: http://sarah.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/
+[ref1]: http://sage.thesharps.us/2014/09/01/the-gentle-art-of-patch-review/
