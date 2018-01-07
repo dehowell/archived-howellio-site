@@ -28,7 +28,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
   const templates = {
     posts: path.resolve(`src/templates/blog-post.js`),
-    biblio: path.resolve(`src/templates/biblio-post.js`)
+    biblio: path.resolve(`src/templates/biblio-post.js`),
+    wpPage: path.resolve(`src/templates/wp-page.js`)
   }
 
   const markdownPages = graphql(`{
@@ -84,7 +85,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   }`).then(result => {
-    console.log(result);
+    if (result.errors) {
+      return Promise.reject(result.errors);
+    }
+
+    result.data.allWordpressPage.edges
+      .forEach(({node}) => {
+        if (node.status === `publish`) {
+          createPage({
+            path: node.slug,
+            component: templates['wpPage'],
+            context: {
+              id: node.id
+            }
+          })
+        }
+      })
   });
 
   return Promise.all([markdownPages, wordpressPages]);
