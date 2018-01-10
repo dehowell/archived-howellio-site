@@ -39,6 +39,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+              pathToConfigModule: `src/utils/typography.js`,
+            }
+          },
           `gatsby-remark-copy-linked-files`,
           {
             resolve: `gatsby-remark-images`,
@@ -62,6 +68,7 @@ module.exports = {
         ]
       }
     },
+    // Note: this plugin _must_ come last in the list.
     `gatsby-plugin-netlify`
   ],
 }
