@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={{ margin: '3rem auto', maxWidth: 600 }}>
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -12,6 +12,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    {/* TODO include header component here */}
     <div>
       {children()}
     </div>
