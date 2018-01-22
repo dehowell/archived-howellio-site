@@ -6,11 +6,8 @@ import Helmet from 'react-helmet'
 const TemplateWrapper = ({ children }) => (
   <div style={{ margin: '3rem auto', maxWidth: 600 }}>
     <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
+      title="howell.io - Home"
+      meta={[]}
     />
     {/* TODO include header component here */}
     <div>
