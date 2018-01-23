@@ -1,0 +1,19 @@
+Initial Release:
+	Create a header component:
+		Must have navigation
+		- Create component @done
+		- Add navigation elements
+	Design basic layouts:
+		Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
+		- index page
+		- blog post
+		- annotated bibliography post
+		- annotated-bibliography index
+	Implement an atom feed:
+		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
+		- Try to reproduce post ids to prevent RSS subscription thrash
+	- Clean up all build errors
+		What the hell is this? http://babeljs.io/env
+	- Set up redirects for all old posts
+		Also a good time to set up redirects, e.g. for d3 biblio posts
+		https://www.gatsbyjs.org/docs/bound-action-creators/#createRedirect
