@@ -4,6 +4,7 @@ module.exports = {
     author: `David Howell`
   },
   plugins: [
+    `gatsby-plugin-glamor`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
