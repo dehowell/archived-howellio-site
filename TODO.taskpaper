@@ -8,13 +8,18 @@ Initial Release:
 	Implement an atom feed:
 		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
 		- Try to reproduce post ids to prevent RSS subscription thrash
-	- Clean up all build errors
-		What the hell is this? http://babeljs.io/env
 	- Set up redirects for all old posts
 		Also a good time to set up redirects, e.g. for d3 biblio posts
 		https://www.gatsbyjs.org/docs/bound-action-creators/#createRedirect
+	- Convert pages from Wordpress back to .md files
+		It's cool that I can do this, but I don't have a way to trigger a build when I publish to Wordpress, so I'm not convinced it's actually worth using. But definitely not for pages and definitely not for posts in V1.
+		- "About"
+		- "Codex Vitae"
+		- "Now"
 
 Archive:
+	- Clean up all build errors @done
+		What the hell is this? http://babeljs.io/env
 	- archive page @done
 		- include favorite posts annotation @done
 	Create a header component: @done
