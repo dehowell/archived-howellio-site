@@ -39,6 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        // TODO This doesn't work yet & depends on an update to the remark plugin.
+        excerpt_separator: `<!-- break -->`,
         plugins: [
           {
             resolve: `gatsby-plugin-typography`,

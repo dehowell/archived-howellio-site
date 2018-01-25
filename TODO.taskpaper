@@ -16,6 +16,12 @@ Initial Release:
 		- "About"
 		- "Codex Vitae"
 		- "Now"
+	- Fix post order bug
+		Sometimes when I edit a post, it's order in the graphql results changes for reasons I do not understand.
+
+Backlog:
+	- Get excerpt separators working
+		There's an open issue for this: https://github.com/gatsbyjs/gatsby/issues/2794
 
 Archive:
 	- Clean up all build errors @done

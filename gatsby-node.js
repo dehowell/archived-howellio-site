@@ -17,6 +17,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     const markdownSource = fileNode.sourceInstanceName;
     const filename = createFilePath({ node, getNode, basePath: markdownSource });
     const [date, slug] = slugFromJekyllFilename(filename);
+    console.log(`${slug} :: ${date}`);
     createNodeField({ node, name: `slug`, value: slug});
     createNodeField({ node, name: `date`, value: new Date(date)});
     createNodeField({ node, name: `source`, value: markdownSource });
