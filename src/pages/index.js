@@ -7,18 +7,15 @@ export default function Index({ data }) {
     <div className="blog-posts">
       { posts
           .filter(post => post.node.frontmatter.title.length > 0)
-          .slice(0, 5)
+          .slice(0, 1)
           .map(({ node: post }) => {
             return (
-              <div>
-                <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-                <p>{ post.excerpt }</p>
-                <p css={{
-                  textAlign: `right`,
-                  fontSize: `smaller`
-                }}>
-                  <Link to={post.fields.slug}>Read More…</Link>
-                </p>
+              <div className="blog-post">
+                <h1>{post.frontmatter.title}</h1>
+                <div
+                  className="blog-post-content"
+                  dangerouslySetInnerHTML={{ __html: post.html }}
+                />
               </div>
             )
           })
@@ -33,6 +30,7 @@ query IndexQuery {
     edges {
       node {
         id
+        html
         excerpt(pruneLength: 280)
         fields {
           slug

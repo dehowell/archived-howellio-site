@@ -1,8 +1,8 @@
 Initial Release:
 	Design basic layouts:
 		Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
-		- index page
-		- blog post
+		- index page @done
+		- blog post @done
 		- annotated bibliography post
 		- annotated-bibliography index
 	Implement an atom feed:
@@ -22,6 +22,8 @@ Initial Release:
 Backlog:
 	- Get excerpt separators working
 		There's an open issue for this: https://github.com/gatsbyjs/gatsby/issues/2794
+	- Integrate Font Awesome 5 for RSS icon, etc.
+		https://fontawesome.com/icons/rss-square?style=solid
 
 Archive:
 	- Clean up all build errors @done

@@ -17,14 +17,13 @@ const Header = () => (
         howell.io
       </Link>
     </h1>
-    <nav
-
-    >
+    <nav>
       <ul css={{
-        display: `flex`,
-        listStyle: `none`,
-        marginLeft: `0`
-      }}>
+          display: `flex`,
+          listStyle: `none`,
+          marginLeft: `0`
+        }}
+      >
         <NavItem to="/" title="Home"/>
         <NavItem to="/about/" title="About"/>
         <NavItem to="/now/" title="Now"/>
