@@ -2,16 +2,16 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 export default function Template({
-  data,
+  data
 }) {
-  const { wordpressPage: page } = data;
+  const { markdownRemark: page } = data;
   return (
     <div className="blog-post-container">
       <Helmet title={`${page.title}`} />
       <div className="blog-post">
         <div
           className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: page.content }}
+          dangerouslySetInnerHTML={{ __html: page.html }}
         />
       </div>
     </div>
@@ -19,11 +19,13 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query WordpressPageById($id: String!) {
-    wordpressPage(id: {eq: $id}) {
+  query MarkdownPageById($id: String!) {
+    markdownRemark(id: {eq: $id}) {
       id
-      title
-      content
+      frontmatter {
+        title
+      }
+      html
     }
   }
 `

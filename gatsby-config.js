@@ -7,17 +7,25 @@ module.exports = {
     `gatsby-plugin-glamor`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `docs/blog`,
+    //     name: `blog`
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
-        name: `posts`,
+        path: `docs/pages`,
+        name: `pages`
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `../docs`,
+        path: `docs/bibliography`,
+        name: `bibliography`
       },
     },
     {

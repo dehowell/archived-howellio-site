@@ -1,5 +1,6 @@
 ---
 title: "Hadley Wickham: ggplot2 geom_point documentation"
+date: 2015-02-10
 source:
   author: Hadley Wickham
   url: http://docs.ggplot2.org/current/geom_point.html

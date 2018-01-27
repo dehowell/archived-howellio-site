@@ -52,7 +52,6 @@ query ArchiveQuery {
         }
         frontmatter {
           title
-          tags
         }
       }
     }

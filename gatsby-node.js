@@ -2,6 +2,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
 
 var slugFromJekyllFilename = (filename) => {
+  console.log(filename);
   const [, date, year, month, day, title] = filename.match(
     /\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
   );
@@ -13,26 +14,41 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
 
   if (node.internal.type === `MarkdownRemark`) {
+    const filename = createFilePath({ node, getNode });
     const fileNode = getNode(node.parent);
-    const markdownSource = fileNode.sourceInstanceName;
-    console.log(markdownSource);
-    const filename = createFilePath({ node, getNode, basePath: markdownSource });
-    const [date, slug] = slugFromJekyllFilename(filename);
-    console.log(`${slug} :: ${date}`);
+    const source = fileNode.sourceInstanceName;
+    const today = (new Date()).toISOString().slice(0, 10)
+
+    switch (source) {
+      case 'pages':
+        var [date, slug] = [today, filename];
+        break;
+      case 'posts':
+        var [date, slug] = slugFromJekyllFilename(filename);
+        break;
+      case 'bibliography':
+        var [date, slug] = slugFromJekyllFilename(filename);
+
+        break;
+    }
+
+    console.log(`${source} :: ${slug} :: ${date}`);
     createNodeField({ node, name: `slug`, value: slug});
     createNodeField({ node, name: `date`, value: new Date(date)});
-    createNodeField({ node, name: `source`, value: markdownSource });
+    createNodeField({ node, name: `source`, value: source });
   }
 };
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
+
   const templates = {
-    posts: path.resolve(`src/templates/blog-post.js`),
-    biblio: path.resolve(`src/templates/biblio-post.js`),
-    wpPage: path.resolve(`src/templates/wp-page.js`)
+    pages: path.resolve(`src/templates/markdown-page.js`),
+    bibliography: path.resolve(`src/templates/biblio-post.js`),
+    posts: path.resolve(`src/templates/blog-post.js`)
   }
+
 
   const markdownPages = graphql(`{
     allMarkdownRemark(
@@ -41,8 +57,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
-          html
           id
           frontmatter {
             title
@@ -63,47 +77,17 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allMarkdownRemark.edges
       .forEach(({node}) => {
+
         createPage({
           path: node.fields.slug,
           component: templates[node.fields.source],
           context: {
+            id: node.id,
             slug: node.fields.slug
           }
         })
       })
   });
 
-  const wordpressPages = graphql(`{
-    allWordpressPage {
-      edges {
-        node {
-          id
-          slug
-          status
-          link
-          title
-          content
-        }
-      }
-    }
-  }`).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
-    }
-
-    result.data.allWordpressPage.edges
-      .forEach(({node}) => {
-        if (node.status === `publish`) {
-          createPage({
-            path: node.slug,
-            component: templates['wpPage'],
-            context: {
-              id: node.id
-            }
-          })
-        }
-      })
-  });
-
-  return Promise.all([markdownPages, wordpressPages]);
+  return Promise.all([markdownPages]);
 };
