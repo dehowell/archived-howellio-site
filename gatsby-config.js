@@ -7,13 +7,13 @@ module.exports = {
     `gatsby-plugin-glamor`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `docs/blog`,
-    //     name: `blog`
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `docs/posts`,
+        name: `posts`
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
