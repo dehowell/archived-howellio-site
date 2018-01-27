@@ -15,6 +15,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const fileNode = getNode(node.parent);
     const markdownSource = fileNode.sourceInstanceName;
+    console.log(markdownSource);
     const filename = createFilePath({ node, getNode, basePath: markdownSource });
     const [date, slug] = slugFromJekyllFilename(filename);
     console.log(`${slug} :: ${date}`);
