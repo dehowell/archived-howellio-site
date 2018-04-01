@@ -10,31 +10,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
-        name: `posts`,
+        path: `docs/posts`,
+        name: `posts`
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/biblio`,
-        name: `biblio`,
+        path: `docs/pages`,
+        name: `pages`
       },
     },
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        baseUrl: `e6e0f28b.wordpress.com`,
-        protocol: `https`,
-        hostingWPCOM: true,
-        useACF: false,
-        auth: {
-          wpcom_app_clientSecret: process.env.WP_CLIENT_SECRET,
-          wpcom_app_clientId: process.env.WP_CLIENT_ID,
-          wpcom_user: process.env.WP_USER,
-          wpcom_pass: process.env.WP_PASS
-        }
-      }
+        path: `docs/bibliography`,
+        name: `bibliography`
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,

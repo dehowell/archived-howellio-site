@@ -26,7 +26,6 @@ export default function Archive({ data }) {
               const isFavorite = post.frontmatter.tags
                 ? post.frontmatter.tags.includes('favorite')
                 : false;
-
               return (
                 <ArchiveLink
                   to={ post.fields.slug }
