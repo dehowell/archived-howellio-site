@@ -18,6 +18,8 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+        <hr/>
+        <p>This post is part of an annotated bibliography about {post.fields.topic} TODO link here</p>
       </div>
     </div>
   );
@@ -29,6 +31,7 @@ export const pageQuery = graphql`
       html
       fields {
         date(formatString: "MMMM DD, YYYY")
+        topic
       }
       frontmatter {
         title

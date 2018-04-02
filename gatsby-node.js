@@ -1,8 +1,11 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
 
+const BIBLIO_TOPICS = {
+  'd3': 'D3.js'
+};
+
 var slugFromJekyllFilename = (filename) => {
-  console.log(filename);
   const [, date, year, month, day, title] = filename.match(
     /\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
   );
@@ -28,11 +31,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         break;
       case 'bibliography':
         var [date, slug] = slugFromJekyllFilename(filename);
-
+        const [, topic] = filename.match(/\/(.*?)\/.*$/);
+        createNodeField({ node, name: `topic`, value: BIBLIO_TOPICS[topic]});
         break;
     }
 
-    console.log(`${source} :: ${slug} :: ${date}`);
     createNodeField({ node, name: `slug`, value: slug});
     createNodeField({ node, name: `date`, value: new Date(date)});
     createNodeField({ node, name: `source`, value: source });
