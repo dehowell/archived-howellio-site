@@ -1,5 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { css } from 'glamor'
+
+const BibliographyRef = props => (
+  <div css={{
+    fontSize: 'smaller'
+  }}>
+    <p>This post is part of an annotated bibliography about {props.topic} TODO link here</p>
+  </div>
+);
 
 export default function Template({
   data,
@@ -18,8 +27,7 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <hr/>
-        <p>This post is part of an annotated bibliography about {post.fields.topic} TODO link here</p>
+        <BibliographyRef name={post.fields.topicName} topic={post.fields.topic}/>
       </div>
     </div>
   );
@@ -32,6 +40,7 @@ export const pageQuery = graphql`
       fields {
         date(formatString: "MMMM DD, YYYY")
         topic
+        topicName
       }
       frontmatter {
         title

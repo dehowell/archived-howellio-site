@@ -32,7 +32,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       case 'bibliography':
         var [date, slug] = slugFromJekyllFilename(filename);
         const [, topic] = filename.match(/\/(.*?)\/.*$/);
-        createNodeField({ node, name: `topic`, value: BIBLIO_TOPICS[topic]});
+        createNodeField({ node, name: `topic`, value: topic });
+        createNodeField({ node, name: `topicName`, value: BIBLIO_TOPICS[topic] });
         break;
     }
 
@@ -91,6 +92,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         })
       })
   });
+
+  const bibliographyIndexes = BIBLIO_TOPICS.keys()
+    .then(key => {
+      // TODO call create page to create the bibliography index page here
+    })
 
   return Promise.all([markdownPages]);
 };
