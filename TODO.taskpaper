@@ -4,7 +4,8 @@ Initial Release:
 		- index page @done
 		- blog post @done
 		- annotated bibliography post
-		- annotated-bibliography index
+		- Create an annotated-bibliography index
+		- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index.
 	Implement an atom feed:
 		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
 		- Try to reproduce post ids to prevent RSS subscription thrash
