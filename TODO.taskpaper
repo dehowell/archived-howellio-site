@@ -1,15 +1,15 @@
-Initial Release:
-	Design basic layouts:
+Initial Release: @done
+	Design basic layouts: @done
 		Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
 		- index page @done
 		- blog post @done
 		- annotated bibliography post @done
 		- Create an annotated-bibliography index @done
-		- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index.
-	Implement an atom feed:
+		- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index. @done
+	Implement an atom feed: @done
 		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
-		- Try to reproduce post ids to prevent RSS subscription thrash
-		- Set up redirects for all old posts
+		- Try to reproduce post ids to prevent RSS subscription thrash @done
+		- Set up redirects for all old posts @done
 			Also a good time to set up redirects, e.g. for d3 biblio posts
 			https://www.gatsbyjs.org/docs/bound-action-creators/#createRedirect
 	- Convert pages from Wordpress back to .md files @done
@@ -17,7 +17,7 @@ Initial Release:
 		- "About" @done
 		- "Codex Vitae" @done
 		- "Now" @done
-	- Fix post order bug
+	- Fix post order bug @done
 		Sometimes when I edit a post, it's order in the graphql results changes for reasons I do not understand.
 
 Backlog:
