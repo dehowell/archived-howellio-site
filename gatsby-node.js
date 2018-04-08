@@ -1,7 +1,8 @@
+const _ = require('lodash');
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
 
-const BIBLIO_TOPICS = {
+const bibliographies = {
   'd3': 'D3.js'
 };
 
@@ -33,7 +34,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         var [date, slug] = slugFromJekyllFilename(filename);
         const [, topic] = filename.match(/\/(.*?)\/.*$/);
         createNodeField({ node, name: `topic`, value: topic });
-        createNodeField({ node, name: `topicName`, value: BIBLIO_TOPICS[topic] });
+        createNodeField({ node, name: `topicName`, value: bibliographies[topic] });
         break;
     }
 
@@ -46,13 +47,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-
   const templates = {
     pages: path.resolve(`src/templates/markdown-page.js`),
     bibliography: path.resolve(`src/templates/biblio-post.js`),
     posts: path.resolve(`src/templates/blog-post.js`)
   }
-
 
   const markdownPages = graphql(`{
     allMarkdownRemark(
@@ -93,10 +92,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       })
   });
 
-  const bibliographyIndexes = BIBLIO_TOPICS.keys()
-    .then(key => {
+  const bibliographyIndexes = Promise.resolve(_.keys(bibliographies))
+    .then(topic => {
       // TODO call create page to create the bibliography index page here
-    })
+    });
 
-  return Promise.all([markdownPages]);
+
+  return Promise.all([markdownPages], bibliographyIndexes);
 };

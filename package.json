@@ -18,6 +18,7 @@
     "gatsby-source-filesystem": "^1.5.10",
     "gatsby-source-wordpress": "^2.0.41",
     "gatsby-transformer-remark": "^1.7.24",
+    "lodash": "^4.17.5",
     "typography-theme-moraga": "^0.15.10"
   },
   "keywords": [
