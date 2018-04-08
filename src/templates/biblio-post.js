@@ -18,11 +18,11 @@ export default function Template({
     <div className="blog-post-container">
       <Helmet title={`Notes – ${post.frontmatter.title}`} />
       <div className="blog-post">
-        <h1>
+        <h2>
           <a href={post.frontmatter.source.url}>
             {post.frontmatter.source.author}: {post.frontmatter.source.title}
           </a>
-        </h1>
+        </h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
