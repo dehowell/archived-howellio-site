@@ -5,8 +5,9 @@ const ArchiveLink = props => (
   <li
     css={{
       listStyleType: 'none',
-      '&::before': {
-        content: props.isFavorite ? '★ ' : ''
+      '&::after': {
+        content: props.isFavorite ? ' ★' : '',
+        color: '#767676'
       }
     }}
   >
@@ -19,6 +20,12 @@ export default function Archive({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <div className="blog-posts">
+      <ul>
+        <ArchiveLink
+          to={ '/bibliography/d3' }
+          title={'An annotated bibliography regarding D3.js'}/>
+      </ul>
+      <h2>Posts</h2>
       <ul>
         { posts
             .filter(post => post.node.frontmatter.title.length > 0)
@@ -43,7 +50,7 @@ export const pageQuery = graphql`
 query ArchiveQuery {
   allMarkdownRemark(
     sort: { order: DESC, fields: [fields___date] },
-    filter: { fields: { source: { ne: "pages" } } }
+    filter: { fields: { source: { eq: "posts" } } }
   ) {
     edges {
       node {
