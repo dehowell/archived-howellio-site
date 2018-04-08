@@ -2,13 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { css } from 'glamor'
 
-const BibliographyRef = props => (
-  <div css={{
-    fontSize: 'larger'
-  }}>
-    {props.author}. {props.title} [<a href={props.source.url}>source</a>]
-  </div>
-)
+import BibliographyRef from '../components/biblio/BibliographyRef';
 
 const BibliographyIndexRef = props => (
   <div css={{

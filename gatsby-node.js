@@ -1,6 +1,6 @@
 const _ = require('lodash');
-const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path');
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const bibliographies = {
   'd3': 'D3.js'
