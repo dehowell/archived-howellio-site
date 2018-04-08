@@ -1,8 +1,12 @@
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require('lodash');
 const path = require('path');
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+const bibliographies = {
+  'd3': 'D3.js'
+};
 
 var slugFromJekyllFilename = (filename) => {
-  console.log(filename);
   const [, date, year, month, day, title] = filename.match(
     /\/(([\d]{4})-([\d]{2})-([\d]{2}))-{1}(.+)\/$/
   );
@@ -28,13 +32,14 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
         break;
       case 'bibliography':
         var [date, slug] = slugFromJekyllFilename(filename);
-
+        const [, topic] = filename.match(/\/(.*?)\/.*$/);
+        createNodeField({ node, name: `topic`, value: topic });
+        createNodeField({ node, name: `topicName`, value: bibliographies[topic] });
         break;
     }
 
-    console.log(`${source} :: ${slug} :: ${date}`);
     createNodeField({ node, name: `slug`, value: slug});
-    createNodeField({ node, name: `date`, value: new Date(date)});
+    createNodeField({ node, name: `date`, value: new Date(node.frontmatter.date || date)});
     createNodeField({ node, name: `source`, value: source });
   }
 };
@@ -42,13 +47,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-
   const templates = {
     pages: path.resolve(`src/templates/markdown-page.js`),
     bibliography: path.resolve(`src/templates/biblio-post.js`),
     posts: path.resolve(`src/templates/blog-post.js`)
   }
-
 
   const markdownPages = graphql(`{
     allMarkdownRemark(
@@ -89,5 +92,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       })
   });
 
-  return Promise.all([markdownPages]);
+  const bibliographyIndexes = Promise.resolve(_.keys(bibliographies))
+    .then(topics => {
+      topics.forEach( topic => {
+        let template = path.resolve(`src/templates/biblio-index.js`);
+
+        createPage({
+          path: `bibliography/${topic}`,
+          component: template,
+          context: {
+            topic: topic
+          }
+        })
+      })
+    });
+
+
+  return Promise.all([markdownPages], bibliographyIndexes);
 };

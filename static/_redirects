@@ -1,0 +1,2 @@
+# Manually configured redirects, handled by the gatsby-netlify-plugin
+/tag/d3-bibliography/ /bibliography/d3/

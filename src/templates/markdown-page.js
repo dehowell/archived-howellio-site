@@ -19,13 +19,12 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query MarkdownPageById($id: String!) {
-    markdownRemark(id: {eq: $id}) {
-      id
-      frontmatter {
-        title
-      }
-      html
+query MarkdownPageById($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    id
+    frontmatter {
+      title
     }
+    html
   }
-`
+}`

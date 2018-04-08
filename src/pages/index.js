@@ -7,7 +7,6 @@ export default function Index({ data }) {
     <div className="blog-posts">
       { posts
           .filter(post => post.node.frontmatter.title.length > 0)
-          .slice(0, 1)
           .map(({ node: post }) => {
             return (
               <div className="blog-post">
@@ -26,7 +25,11 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
 query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [fields___date] }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [fields___date] },
+      filter: {fields: {source: {eq:"posts"}}},
+      limit: 1
+    ) {
     edges {
       node {
         id

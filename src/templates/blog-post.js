@@ -21,15 +21,14 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        date(formatString: "MMMM DD, YYYY")
-      }
-      frontmatter {
-        title
-      }
+query BlogPostBySlug($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+    html
+    fields {
+      date(formatString: "MMMM DD, YYYY")
+    }
+    frontmatter {
+      title
     }
   }
-`
+}`
