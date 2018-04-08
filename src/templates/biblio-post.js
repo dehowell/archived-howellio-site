@@ -15,42 +15,42 @@ const BibliographyIndexRef = props => (
 export default function Template({
   data,
 }) {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: reference } = data;
   return (
     <div className="blog-post-container">
-      <Helmet title={`Notes – ${post.frontmatter.title}`} />
+      <Helmet title={`Notes – ${reference.frontmatter.title}`} />
       <div className="blog-post">
         <BibliographyRef
-          author={post.frontmatter.source.author}
-          title={post.frontmatter.source.title}
-          source={post.frontmatter.source}/>
+          author={reference.frontmatter.source.author}
+          title={reference.frontmatter.source.title}
+          source={reference.frontmatter.source}
+          date={reference.fields.date}/>
         <div
           className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{ __html: reference.html }}
         />
-        <BibliographyIndexRef name={post.fields.topicName} topic={post.fields.topic}/>
+        <BibliographyIndexRef name={reference.fields.topicName} topic={reference.fields.topic}/>
       </div>
     </div>
   );
 }
 
 export const pageQuery = graphql`
-  query BibloPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        date(formatString: "MMMM DD, YYYY")
-        topic
-        topicName
-      }
-      frontmatter {
+query BibloPostBySlug($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
+    html
+    fields {
+      date(formatString: "MMMM DD, YYYY")
+      topic
+      topicName
+    }
+    frontmatter {
+      title
+      source {
+        author
         title
-        source {
-          author
-          title
-          url
-        }
+        url
       }
     }
   }
-`
+}`

@@ -93,8 +93,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 
   const bibliographyIndexes = Promise.resolve(_.keys(bibliographies))
-    .then(topic => {
-      // TODO call create page to create the bibliography index page here
+    .then(topics => {
+      topics.forEach( topic => {
+        let template = path.resolve(`src/templates/biblio-index.js`);
+
+        createPage({
+          path: `bibliography/${topic}`,
+          component: template,
+          context: {
+            topic: topic
+          }
+        })
+      })
     });
 
 
