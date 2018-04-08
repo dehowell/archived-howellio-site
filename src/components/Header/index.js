@@ -4,7 +4,7 @@ import { css } from 'glamor'
 
 
 const NavItem = props => (
-  <li css={{ marginRight: `20pt`}}>
+  <li css={{ marginRight: `20px`}}>
     <Link to={props.to}>{props.title}</Link>
   </li>
 )
@@ -12,11 +12,19 @@ const NavItem = props => (
 
 const Header = () => (
   <div>
-    <h1>
+    <h1 css={{
+      marginBottom: 0
+    }}>
       <Link to="/">
         howell.io
       </Link>
     </h1>
+    <p css={{
+      color: '#767676',
+      fontStyle: 'italic'
+    }}>
+      As unprincipled as the gods, and as much a jack-of-all-trades.
+    </p>
     <nav>
       <ul css={{
           display: `flex`,

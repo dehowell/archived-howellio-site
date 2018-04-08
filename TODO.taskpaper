@@ -1,32 +1,35 @@
-Initial Release: @done
-	Design basic layouts: @done
-		Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
-		- index page @done
-		- blog post @done
-		- annotated bibliography post @done
-		- Create an annotated-bibliography index @done
-		- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index. @done
-	Implement an atom feed: @done
-		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
-		- Try to reproduce post ids to prevent RSS subscription thrash @done
-		- Set up redirects for all old posts @done
-			Also a good time to set up redirects, e.g. for d3 biblio posts
-			https://www.gatsbyjs.org/docs/bound-action-creators/#createRedirect
-	- Convert pages from Wordpress back to .md files @done
-		It's cool that I can do this, but I don't have a way to trigger a build when I publish to Wordpress, so I'm not convinced it's actually worth using. But definitely not for pages and definitely not for posts in V1.
-		- "About" @done
-		- "Codex Vitae" @done
-		- "Now" @done
-	- Fix post order bug @done
-		Sometimes when I edit a post, it's order in the graphql results changes for reasons I do not understand.
 
-Backlog:
-	- Get excerpt separators working
-		There's an open issue for this: https://github.com/gatsbyjs/gatsby/issues/2794
-	- Integrate Font Awesome 5 for RSS icon, etc.
-		https://fontawesome.com/icons/rss-square?style=solid
+
+- Add links to RSS feed
+- Add RSS feeds for each bibliography
+- Improve centrally managed bibliography metadata
+- Get excerpt separators working
+	There's an open issue for this: https://github.com/gatsbyjs/gatsby/issues/2794
+- Integrate Font Awesome 5 for RSS icon, etc.
+	https://fontawesome.com/icons/rss-square?style=solid
 
 Archive:
+	Initial Release: @done
+		Design basic layouts: @done
+			Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
+			- index page @done
+			- blog post @done
+			- annotated bibliography post @done
+			- Create an annotated-bibliography index @done
+			- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index. @done
+		Implement an atom feed: @done
+			https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
+			- Try to reproduce post ids to prevent RSS subscription thrash @done
+			- Set up redirects for all old posts @done
+				Also a good time to set up redirects, e.g. for d3 biblio posts
+				https://www.gatsbyjs.org/docs/bound-action-creators/#createRedirect
+		- Convert pages from Wordpress back to .md files @done
+			It's cool that I can do this, but I don't have a way to trigger a build when I publish to Wordpress, so I'm not convinced it's actually worth using. But definitely not for pages and definitely not for posts in V1.
+			- "About" @done
+			- "Codex Vitae" @done
+			- "Now" @done
+		- Fix post order bug @done
+			Sometimes when I edit a post, it's order in the graphql results changes for reasons I do not understand.
 	- Clean up all build errors @done
 		What the hell is this? http://babeljs.io/env
 	- archive page @done
