@@ -41,7 +41,10 @@ export default function Archive({ data }) {
 
 export const pageQuery = graphql`
 query ArchiveQuery {
-  allMarkdownRemark(sort: { order: DESC, fields: [fields___date] }) {
+  allMarkdownRemark(
+    sort: { order: DESC, fields: [fields___date] },
+    filter: { fields: { source: { ne: "pages" } } }
+  ) {
     edges {
       node {
         id
