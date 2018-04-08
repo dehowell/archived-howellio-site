@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const BibliographyRef = props => {
-  console.log(props.slug);
   return (
     <div css={{marginBottom: "20px"}}>
       <h2 css={{marginBottom: 0}} >
