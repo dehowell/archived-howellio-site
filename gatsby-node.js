@@ -39,7 +39,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
     }
 
     createNodeField({ node, name: `slug`, value: slug});
-    createNodeField({ node, name: `date`, value: new Date(date)});
+    createNodeField({ node, name: `date`, value: new Date(node.frontmatter.date || date)});
     createNodeField({ node, name: `source`, value: source });
   }
 };

@@ -3,8 +3,8 @@ Initial Release:
 		Read through tutorial part three https://www.gatsbyjs.org/tutorial/part-three/
 		- index page @done
 		- blog post @done
-		- annotated bibliography post
-		- Create an annotated-bibliography index
+		- annotated bibliography post @done
+		- Create an annotated-bibliography index @done
 		- Set up redirect from /tag/d3-bibliography/index.html to annotated bibliography index.
 	Implement an atom feed:
 		https://benmccormick.org/2017/06/03/rss-atom-json-gatsby/
