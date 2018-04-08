@@ -2,7 +2,6 @@ I'm in Vermont, splitting my time between:
 
 - raising my son with my wife
 - working as a software developer on [digital marketing tools](http://www.dealer.com/products/advertising/) for the auto industry
-- prototyping software for art and better living as half of [Pixel to Noise](http://pixel-to-noise.github.io/)
 - reading and writing
 - running
 - meditating

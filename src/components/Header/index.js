@@ -24,7 +24,6 @@ const Header = () => (
           marginLeft: `0`
         }}
       >
-        <NavItem to="/" title="Home"/>
         <NavItem to="/about/" title="About"/>
         <NavItem to="/now/" title="Now"/>
         <NavItem to="/codex-vitae/" title="Codex Vitae"/>
