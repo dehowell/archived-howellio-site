@@ -5,7 +5,7 @@ module.exports = {
     title: 'howell.io',
     description: 'As unprincipled as the gods, and as much a jack-of-all-trades.',
     author: 'David Howell',
-    siteUrl: 'https://www.howell.io/'
+    siteUrl: 'https://www.howell.io'
   },
 
   plugins: [
@@ -87,5 +87,5 @@ module.exports = {
     },
     // Note: this plugin _must_ come last in the list.
     'gatsby-plugin-netlify'
-  ],
+  ]
 }
