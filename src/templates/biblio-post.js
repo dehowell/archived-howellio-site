@@ -4,6 +4,14 @@ import { css } from 'glamor'
 
 const BibliographyRef = props => (
   <div css={{
+    fontSize: 'larger'
+  }}>
+    {props.author}. {props.title} [<a href={props.source.url}>source</a>]
+  </div>
+)
+
+const BibliographyIndexRef = props => (
+  <div css={{
     fontSize: 'smaller'
   }}>
     <p>This post is part of an annotated bibliography about {props.topic} TODO link here</p>
@@ -18,16 +26,15 @@ export default function Template({
     <div className="blog-post-container">
       <Helmet title={`Notes – ${post.frontmatter.title}`} />
       <div className="blog-post">
-        <h2>
-          <a href={post.frontmatter.source.url}>
-            {post.frontmatter.source.author}: {post.frontmatter.source.title}
-          </a>
-        </h2>
+        <BibliographyRef
+          author={post.frontmatter.source.author}
+          title={post.frontmatter.source.title}
+          source={post.frontmatter.source}/>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <BibliographyRef name={post.fields.topicName} topic={post.fields.topic}/>
+        <BibliographyIndexRef name={post.fields.topicName} topic={post.fields.topic}/>
       </div>
     </div>
   );
