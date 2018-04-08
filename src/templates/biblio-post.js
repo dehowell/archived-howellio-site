@@ -8,7 +8,9 @@ const BibliographyIndexRef = props => (
   <div css={{
     fontSize: 'smaller'
   }}>
-    <p>This post is part of an annotated bibliography about {props.topic} TODO link here</p>
+    <p>
+      This post is part of an annotated bibliography on <a href={`/bibliography/${props.topic}`}>{props.name}</a>.
+    </p>
   </div>
 );
 
@@ -23,6 +25,7 @@ export default function Template({
         <BibliographyRef
           author={reference.frontmatter.source.author}
           title={reference.frontmatter.source.title}
+          slug={reference.fields.slug}
           source={reference.frontmatter.source}
           date={reference.fields.date}/>
         <div
