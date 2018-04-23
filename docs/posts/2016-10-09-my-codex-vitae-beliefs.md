@@ -4,7 +4,7 @@ title: "My Codex Vitae: Beliefs"
 date: 2016-10-09T15:28:31-04:00
 ---
 
-[Buster Benson](https://twitter.com/buster), behavior change junkie and creator of [750 Words](http://750words.com), maintains a [catalogue of his beliefs](https://github.com/busterbenson/public/blob/master/Codex.md) as a version-controlled document. Inspired by [his example](http://wayoftheduck.com/codex-vitae) (and Shawn Blanc's [Core Curriculum](http://shawnblanc.net/2015/01/the-core-curriculum/)) I started doing the same. Until now, I've kept my own privately and reviewed them weekly. On re-reading today, I see no reason not to share. So here you are: my own beliefs, acquired through reading and experience, subject to revision, and situated on the boundary between universal and instrumental truths.
+[Buster Benson](https://twitter.com/buster), behavior change junkie and creator of [750 Words](http://750words.com), maintains a [catalogue of his beliefs](https://github.com/busterbenson/public/blob/master/Codex.md) as a version-controlled document. Inspired by [his example](https://buster.svbtle.com/codex-vitae) (and Shawn Blanc's [Core Curriculum](http://shawnblanc.net/2015/01/the-core-curriculum/)) I started doing the same. Until now, I've kept my own privately and reviewed them weekly. On re-reading today, I see no reason not to share. So here you are: my own beliefs, acquired through reading and experience, subject to revision, and situated on the boundary between universal and instrumental truths.
 
 ## Beliefs
 
