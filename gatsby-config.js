@@ -85,6 +85,15 @@ module.exports = {
         feeds: feeds
       }
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: "UA-72069603-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
+    },
     // Note: this plugin _must_ come last in the list.
     'gatsby-plugin-netlify'
   ]
