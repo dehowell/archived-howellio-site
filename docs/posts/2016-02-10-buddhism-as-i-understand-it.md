@@ -10,7 +10,7 @@ tags:
 - The sense that there is a you experiencing your thoughts and perceptions is a kind of thought. That sense is not you.
 - What other people think of as you is a physical body - driven by an assemblage of thoughts and sensations - that behaves in consistent and coherent ways, due to biological factors and habits acquired through your history.
 - No single aspect of that entity is you. No thought taken on its own is you. You are a nebulous collection of space-time paths and there is no "secret self" running the show.
-- There are a set of practices which provide visceral knowledge of the disunity of the self and that "you" are the sum of a set of processes that share the same approximate [world line](https://en.wikipedia.org/wiki/World_line).
+- There are a set of practices which provide visceral knowledge of the disunity of the self, showing that "you" are the sum of a set of processes that share the same approximate [world line](https://en.wikipedia.org/wiki/World_line).
 
 People sometimes say that Buddhism is a philosophy, not a religion. That's a little unfair: every religion always contains some philosophy. Buddhism is no different. I choose not to embrace the religious metaphysics[^1] that often accompany Buddhism, but I don't need to redefine how anyone else relates to it. There are as many Buddhisms as there are Buddhists[^2], so I'm content to be pragmatic and cherry-pick those aspects which are compatible with modern cognitive science and [philosophical materialism](https://en.wikipedia.org/wiki/Materialism), without denying Buddhism's status as a religion.
 
