@@ -10,7 +10,7 @@ date: 2016-10-09T15:28:31-04:00
 
 I want to solve more problems than I create, clean up more messes than I make.
 
-Consciousness is immanent in the mind and body. There is no separate "soul-stuff" transcendant from the material universe. The sense of self is a process enacted continuously.
+Consciousness is immanent in the mind and body. There is no separate "soul-stuff" transcendent from the material universe. The sense of self is a process enacted continuously.
 
 A human life has no cosmic, unambiguous purpose: we have the opportunity and responsibility to find and make that choice on our own, between ourselves.
 
