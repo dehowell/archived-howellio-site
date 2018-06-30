@@ -1,3 +1,7 @@
+---
+title: "About"
+---
+
 David Howell is a software developer, but isn't comfortable being pigeon-holed as just a STEM-type. He did some graduate work in physics and worked on a variety of particle physics experiments, but ultimately found writing software a more congenial career path for a curious generalist—software is all about formalizing other problem domains. Besides, software engineering has its own panoply of theoretical paradigms, weird rituals, and obtuse systems to learn.
 
 ## Notable Projects
