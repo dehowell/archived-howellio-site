@@ -1,3 +1,7 @@
+---
+title: "Now"
+---
+
 I'm in Vermont, splitting my time between:
 
 - raising my son with my wife
@@ -8,7 +12,7 @@ I'm in Vermont, splitting my time between:
 
 If you want to get in touch:
 
-- Say [hello on Twitter](http://twitter.com/dehowell).
+- Say [hello on Twitter](http://twitter.com/dehowell), [Micro.blog](http://dehowell.micro.blog), or [Mastodon](https://refactorcamp.org/@dehowell). The world of social media is fragmenting!.
 - Check out my projects on [GitHub](https://github.com/dehowell).
 - See a slice of Vermont life on [Instagram](https://instagram.com/dehowell/).
 - Check out what I've been reading on [Instapaper](https://www.instapaper.com/liked).

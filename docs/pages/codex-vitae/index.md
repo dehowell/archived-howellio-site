@@ -1,3 +1,7 @@
+---
+title: "Codex Vitae"
+---
+
 This is a place for me to store statements of my long-term goals, [GTD][1] horizons, and affirmations of my beliefs and values. Inspired by Buster Benson and his [Codex Vitae][2].
 
 [1]:	http://gettingthingsdone.com "Getting Things Done"
