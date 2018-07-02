@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Link from 'gatsby-link'
+
 
 export default function Template({
   data,
@@ -9,8 +11,7 @@ export default function Template({
     <div className="blog-post-container">
       <Helmet title={`Your Blog Post - ${post.frontmatter.title}`} />
       <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <h2>{post.fields.date}</h2>
+        <Link to={post.fields.slug}><h1>{post.frontmatter.title}</h1></Link>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -26,6 +27,7 @@ query BlogPostBySlug($slug: String!) {
     html
     fields {
       date(formatString: "MMMM DD, YYYY")
+      slug
     }
     frontmatter {
       title

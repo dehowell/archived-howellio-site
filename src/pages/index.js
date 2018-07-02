@@ -10,7 +10,7 @@ export default function Index({ data }) {
           .map(({ node: post }) => {
             return (
               <div className="blog-post">
-                <h1>{post.frontmatter.title}</h1>
+                <Link to={post.fields.slug}><h1>{post.frontmatter.title}</h1></Link>
                 <div
                   className="blog-post-content"
                   dangerouslySetInnerHTML={{ __html: post.html }}
