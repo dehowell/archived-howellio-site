@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      # TODO do I need a Python 2.7 for this?
+      - npm install
+  build:
+      - npx gatsby build
+
