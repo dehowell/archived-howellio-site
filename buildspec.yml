@@ -12,4 +12,4 @@ phases:
       - ls
 artifacts:
   files:
-    - public
+    - ./public/
