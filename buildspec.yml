@@ -7,5 +7,6 @@ phases:
       # TODO do I need a Python 2.7 for this?
       - npm install
   build:
+    commands:
       - npx gatsby build
 
