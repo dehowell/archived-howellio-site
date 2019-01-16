@@ -9,4 +9,6 @@ phases:
   build:
     commands:
       - npx gatsby build
-
+artifacts:
+  files:
+    - public
