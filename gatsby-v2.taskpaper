@@ -1,9 +1,11 @@
 Rebuilding howell.io from scratch using Gatsby v2.
 
+Staging site at https://cranky-mcnulty-89b6d7.netlify.com
+
 Site Layout:
-	- Add typography back in
+	- Add typography back in @done
 	- Add glamor or similar back in for CSS tweaks
-	- Create nested layout to package up header, footer, etc.
+	- Create nested layout to package up header, footer, etc. @done
 		https://www.gatsbyjs.org/tutorial/part-three/
 		
 	
@@ -12,4 +14,4 @@ Content:
 	- Add blog posts
 	
 Build & Deploy:
-	- Add staging deployment with netlify
+	- Add staging deployment with netlify @done
