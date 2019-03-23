@@ -1,0 +1,16 @@
+{
+  "description": "Personal website for David Howell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehowell/howellio-site.git"
+  },
+  "author": "David Howell",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "gatsby": "^2.2.8",
+    "gatsby-source-filesystem": "^2.0.28",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
