@@ -9,7 +9,7 @@ export default function Template({
   const { markdownRemark: post } = data;
   return (
     <div className="blog-post-container">
-      <Helmet title={`Your Blog Post - ${post.frontmatter.title}`} />
+      <Helmet title={`${post.frontmatter.title} | howell.io`} />
       <div className="blog-post">
         <Link to={post.fields.slug}><h1>{post.frontmatter.title}</h1></Link>
         <div
