@@ -22,6 +22,9 @@ module.exports = {
         path: "docs/posts",
         name: "posts"
       }
+    },
+    {
+      resolve: "gatsby-transformer-remark"
     }
   ]
 };
