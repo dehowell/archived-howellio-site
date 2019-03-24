@@ -2,15 +2,10 @@ import styled from "@emotion/styled";
 import { Link, StaticQuery, graphql } from "gatsby";
 import React from "react";
 
-// TODO replace px styling everywhere with em or things derived from typography
+import { rhythm } from "../utils/typography";
+
 // TODO move Helmet here?
 // TODO replace explicit gray color with gray call
-const NavItem = props => (
-  <li style={{ marginRight: "20px" }}>
-    <Link to={props.to}>{props.title}</Link>
-  </li>
-);
-
 const Title = styled.h1`
   margin: 0;
 `;
@@ -18,7 +13,7 @@ const Title = styled.h1`
 const Description = styled.p`
   font-style: italic;
   color: #767676;
-  margin-bottom: 0.5em;
+  margin-bottom: ${rhythm(1 / 2)};
 `;
 
 const Menu = styled.ul`
@@ -26,6 +21,16 @@ const Menu = styled.ul`
   list-style: none;
   margin-left: 0;
 `;
+
+const MenuItem = styled.li`
+  margin-right: ${rhythm(1 / 2)};
+`;
+
+const NavItem = props => (
+  <MenuItem>
+    <Link to={props.to}>{props.title}</Link>
+  </MenuItem>
+);
 
 export default () => (
   <StaticQuery
