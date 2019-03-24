@@ -4,8 +4,6 @@ import React from "react";
 
 import { rhythm } from "../utils/typography";
 
-// TODO move Helmet here?
-// TODO replace explicit gray color with gray call
 const Title = styled.h1`
   margin: 0;
 `;

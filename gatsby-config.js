@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-emotion",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-typography",
       options: {
@@ -25,7 +26,23 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-transformer-remark"
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 600,
+              linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: "gatsby-remark-prismjs"
+          }
+        ]
+      }
     }
   ]
 };
