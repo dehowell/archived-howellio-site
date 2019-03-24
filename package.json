@@ -7,8 +7,14 @@
   "author": "David Howell",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "start": "gatsby develop"
+  },
   "dependencies": {
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.9",
     "gatsby": "^2.2.8",
+    "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-typography": "^2.2.10",
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.3.8",

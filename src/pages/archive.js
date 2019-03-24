@@ -1,22 +1,22 @@
-import React from "react";
-import Link from "gatsby-link";
+import { css } from "@emotion/core";
 import { graphql } from "gatsby";
+import Link from "gatsby-link";
+import React from "react";
 
 import Layout from "../components/layout";
 
-const ArchiveLink = props => (
-  <li
-    style={{
-      listStyleType: "none",
-      "&::after": {
-        content: props.isFavorite ? " ★" : "",
-        color: "#767676"
-      }
-    }}
-  >
-    <Link to={props.to}>{props.title}</Link>
-  </li>
-);
+// TODO re-add the star for favorite posts
+const ArchiveLink = props => {
+  return (
+    <li
+      css={css`
+        list-style-type: none;
+      `}
+    >
+      <Link to={props.to}>{props.title}</Link>
+    </li>
+  );
+};
 
 export default function Archive({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
@@ -33,15 +33,10 @@ export default function Archive({ data }) {
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
-            console.log(JSON.stringify(post));
-            const isFavorite = post.frontmatter.tags
-              ? post.frontmatter.tags.includes("favorite")
-              : false;
             return (
               <ArchiveLink
                 to={post.fields.slug}
                 title={post.frontmatter.title}
-                isFavorite={isFavorite}
               />
             );
           })}
