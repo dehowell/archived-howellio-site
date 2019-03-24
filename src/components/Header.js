@@ -1,5 +1,6 @@
-import React from "react";
+import styled from "@emotion/styled";
 import { Link, StaticQuery, graphql } from "gatsby";
+import React from "react";
 
 // TODO replace px styling everywhere with em or things derived from typography
 // TODO move Helmet here?
@@ -9,6 +10,21 @@ const NavItem = props => (
     <Link to={props.to}>{props.title}</Link>
   </li>
 );
+
+const Title = styled.h1`
+  margin: 0;
+`;
+
+const Description = styled.p`
+  font-style: italic;
+  color: #767676;
+`;
+
+// const Menu = styled.ul`
+//   display: flex,
+//   list-style: none,
+//   margin-left: 0
+// `;
 
 const Header = () => (
   <StaticQuery
@@ -24,12 +40,10 @@ const Header = () => (
     `}
     render={data => (
       <header>
-        <h1 style={{ marginBottom: 0 }}>
+        <Title>
           <Link to="/">{data.site.siteMetadata.title}</Link>
-        </h1>
-        <p style={{ color: "#767676", fontStyle: "italic" }}>
-          {data.site.siteMetadata.description}
-        </p>
+        </Title>
+        <Description>{data.site.siteMetadata.description}</Description>
         <nav>
           <ul style={{ display: "flex", listStyle: "none", marginLeft: "0" }}>
             <NavItem to="/about/" title="About" />
