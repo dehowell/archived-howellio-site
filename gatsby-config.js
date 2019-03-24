@@ -3,7 +3,7 @@ module.exports = {
     title: "howell.io",
     author: "David Howell",
     description:
-      "As unprincipled as the gods, and as much a jack-of-all-trades.",
+      "…as unprincipled as the gods, and as much a jack-of-all-trades.",
     siteUrl: "https://www.howell.io/",
     social: {
       twitter: "dehowell"

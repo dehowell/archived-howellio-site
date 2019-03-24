@@ -18,15 +18,16 @@ const Title = styled.h1`
 const Description = styled.p`
   font-style: italic;
   color: #767676;
+  margin-bottom: 0.5em;
 `;
 
-// const Menu = styled.ul`
-//   display: flex,
-//   list-style: none,
-//   margin-left: 0
-// `;
+const Menu = styled.ul`
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+`;
 
-const Header = () => (
+export default () => (
   <StaticQuery
     query={graphql`
       query HeaderQuery {
@@ -45,15 +46,13 @@ const Header = () => (
         </Title>
         <Description>{data.site.siteMetadata.description}</Description>
         <nav>
-          <ul style={{ display: "flex", listStyle: "none", marginLeft: "0" }}>
+          <Menu>
             <NavItem to="/about/" title="About" />
             <NavItem to="/archive/" title="Archive" />
             <NavItem to="/codex-vitae/" title="Codex Vitae" />
-          </ul>
+          </Menu>
         </nav>
       </header>
     )}
   />
 );
-
-export default Header;
