@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import React from "react";
 
 const Footer = styled.footer`
-  fontsize: "smaller";
+  font-size: smaller;
 `;
 
 export default () => {
