@@ -1,7 +1,12 @@
-import React from "react";
+import styled from "@emotion/styled";
 import { StaticQuery, graphql } from "gatsby";
+import React from "react";
 
-const Footer = () => {
+const Footer = styled.footer`
+  fontsize: "smaller";
+`;
+
+export default () => {
   const year = new Date().getFullYear();
   return (
     <StaticQuery
@@ -22,20 +27,19 @@ const Footer = () => {
           data.site.siteMetadata.social.twitter
         }`;
         return (
-          <footer style={{ fontSize: "smaller" }}>
+          <Footer>
             <hr />
             &copy; 2014&ndash;{year} {data.site.siteMetadata.author}
             <br />
             <a href={twitterLink}>@{data.site.siteMetadata.social.twitter}</a>
             <br />
-          </footer>
+          </Footer>
         );
       }}
     />
   );
 };
 
-export default Footer;
 // TODO re-add google analytics
 // <a href="javascript:gaOptOut();">Deactive Google Analytics</a>
 // <br />
