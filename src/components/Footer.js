@@ -22,7 +22,7 @@ const Footer = () => {
           data.site.siteMetadata.social.twitter
         }`;
         return (
-          <footer>
+          <footer style={{ fontSize: "smaller" }}>
             <hr />
             &copy; 2014&ndash;{year} {data.site.siteMetadata.author}
             <br />
