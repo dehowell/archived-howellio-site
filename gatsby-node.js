@@ -10,6 +10,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     // `docs/` is subdivided by type of content, where each subdirectory is set
     // up as a separate, named filesystem source.
     let source = fileNode.sourceInstanceName;
+    createNodeField({ node, name: "source", value: source });
 
     switch (source) {
       case "posts":
@@ -20,7 +21,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           name: "date",
           value: new Date(node.frontmatter.date || date)
         });
-        createNodeField({ node, name: "source", value: source });
+        break;
+      case "pages":
+        createNodeField({ node, name: "slug", value: filename });
         break;
     }
   }
@@ -30,6 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   const templates = {
+    pages: path.resolve("src/templates/markdown-page.js"),
     posts: path.resolve("src/templates/blog-post.js")
   };
 

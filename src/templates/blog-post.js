@@ -8,9 +8,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <article>
-        <h1>
-          <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
     </Layout>
