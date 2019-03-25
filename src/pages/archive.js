@@ -7,10 +7,16 @@ import Layout from "../components/layout";
 
 // TODO re-add the star for favorite posts
 const ArchiveLink = props => {
+  const content = props.favorite ? " ★" : "";
   return (
     <li
       css={css`
         list-style-type: none;
+        &::after {
+          font-size: smaller;
+          content: "${content}";
+          color: #767676;
+        }
       `}
     >
       <Link to={props.to}>{props.title}</Link>
@@ -33,10 +39,15 @@ export default function Archive({ data }) {
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
+            const isFavorite = post.frontmatter.tags
+              ? post.frontmatter.tags.includes("favorite")
+              : false;
             return (
               <ArchiveLink
+                key={post.fields.slug}
                 to={post.fields.slug}
                 title={post.frontmatter.title}
+                favorite={isFavorite}
               />
             );
           })}
