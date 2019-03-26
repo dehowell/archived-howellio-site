@@ -51,8 +51,8 @@ export default () => (
         <nav>
           <Menu>
             <NavItem to="/about/" title="About" />
-            <NavItem to="/archive/" title="Archive" />
             <NavItem to="/codex-vitae/" title="Codex Vitae" />
+            <NavItem to="/archive/" title="Archive" />
           </Menu>
         </nav>
       </header>

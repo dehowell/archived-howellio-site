@@ -21,15 +21,22 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "docs/posts",
-        name: "posts"
+        path: "docs/pages",
+        name: "pages"
       }
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "docs/pages",
-        name: "pages"
+        path: "docs/bibliography",
+        name: "bibliography"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "docs/posts",
+        name: "posts"
       }
     },
     {
