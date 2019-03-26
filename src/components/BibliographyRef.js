@@ -10,6 +10,10 @@ const CitationTitle = styled.h2`
   margin-bottom: 0;
 `;
 
+const CitationCaption = styled.p`
+  font-size: smaller;
+`;
+
 const BibliographyRef = props => {
   return (
     <Citation>
@@ -18,7 +22,9 @@ const BibliographyRef = props => {
           {props.author}. {props.title}
         </a>
       </CitationTitle>
-      Notes from {props.date}. [<a href={props.source.url}>source</a>]
+      <CitationCaption>
+        Notes from {props.date}. [<a href={props.source.url}>source</a>]
+      </CitationCaption>
     </Citation>
   );
 };

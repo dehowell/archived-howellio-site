@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
+import BibliographyRef from "../components/BibliographyRef";
 import Layout from "../components/layout";
 
 export default ({ data }) => {
@@ -12,7 +13,17 @@ export default ({ data }) => {
       <Helmet title={`Annotated Bibliography - ${topicName}`} />
       <article>
         {references.map(({ node: reference }) => {
-          return <p>reference.title</p>;
+          return (<div>
+            <BibliographyRef
+                author={reference.frontmatter.source.author}
+                title={reference.frontmatter.source.title}
+                slug={reference.fields.slug}
+                source={reference.frontmatter.source}
+                date={reference.fields.date}/>
+                <div dangerouslySetInnerHTML={{ __html: reference.html }}/>
+              </div>)
+
+
         })}
       </article>
     </Layout>
