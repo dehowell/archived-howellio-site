@@ -1,3 +1,5 @@
+const feeds = require("./feeds");
+
 module.exports = {
   siteMetadata: {
     title: "howell.io",
@@ -57,6 +59,33 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        query: `
+       {
+         site {
+           siteMetadata {
+             title
+             description
+             siteUrl
+           }
+         }
+       }
+     `,
+        feeds: feeds
+      }
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-72069603-1",
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
+    },
+    "gatsby-plugin-netlify" // MUST COME LAST
   ]
 };

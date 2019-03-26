@@ -99,7 +99,6 @@ exports.createPages = ({ actions, graphql }) => {
     topics => {
       topics.forEach(topic => {
         let template = path.resolve("src/templates/biblio-index.js");
-        console.log(`WORKING ON ${topic}`)
         createPage({
           path: `/bibliography/${topic}`,
           component: template,
