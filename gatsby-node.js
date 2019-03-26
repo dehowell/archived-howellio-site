@@ -95,7 +95,7 @@ exports.createPages = ({ actions, graphql }) => {
     });
   });
 
-  const bibliographyIndexes = Promise.resolve(_.keys(bibliographies)).then(
+  const bibliographyIndexes = Promise.resolve(Object.keys(bibliographies)).then(
     topics => {
       topics.forEach(topic => {
         let template = path.resolve("src/templates/biblio-index.js");
