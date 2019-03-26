@@ -1,59 +1,65 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { css } from 'glamor'
+import React from "react";
+import { graphql } from "gatsby";
+import styled from "@emotion/styled";
 
-import BibliographyRef from '../components/biblio/BibliographyRef';
+import BibliographyRef from "../components/BibliographyRef";
+import Layout from "../components/layout";
 
-const BibliographyIndexRef = props => (
-  <div css={{
-    fontSize: 'smaller'
-  }}>
-    <p>
-      This post is part of an annotated bibliography on <a href={`/bibliography/${props.topic}`}>{props.name}</a>.
-    </p>
-  </div>
-);
+const BibliographyFooter = styled.footer`
+  font-size: smaller;
+`;
 
-export default function Template({
-  data,
-}) {
-  const { markdownRemark: reference } = data;
+const BibliographyIndexRef = props => {
+  let link = `/bibliography/${props.topic}`;
   return (
-    <div className="blog-post-container">
-      <Helmet title={`Notes – ${reference.frontmatter.title}`} />
-      <div className="blog-post">
+    <BibliographyFooter>
+      <p>
+        This post is part of an annotated bibliography on{" "}
+        <a href={link}>{props.name}</a>.
+      </p>
+    </BibliographyFooter>
+  );
+};
+
+export default ({ data }) => {
+  const reference = data.markdownRemark;
+  return (
+    <Layout>
+      <article>
         <BibliographyRef
           author={reference.frontmatter.source.author}
           title={reference.frontmatter.source.title}
           slug={reference.fields.slug}
           source={reference.frontmatter.source}
-          date={reference.fields.date}/>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: reference.html }}
+          date={reference.fields.date}
         />
-        <BibliographyIndexRef name={reference.fields.topicName} topic={reference.fields.topic}/>
-      </div>
-    </div>
+        <div dangerouslySetInnerHTML={{ __html: reference.html }} />
+        <BibliographyIndexRef
+          name={reference.fields.topicName}
+          topic={reference.fields.topic}
+        />
+      </article>
+    </Layout>
   );
-}
+};
 
-export const pageQuery = graphql`
-query BibloPostBySlug($slug: String!) {
-  markdownRemark(fields: { slug: { eq: $slug } }) {
-    html
-    fields {
-      date(formatString: "MMMM DD, YYYY")
-      topic
-      topicName
-    }
-    frontmatter {
-      title
-      source {
-        author
+export const query = graphql`
+  query BiblioPostBySlug($slug: String) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      fields {
+        date(formatString: "MMMM DD, YYYY")
+        topic
+        topicName
+      }
+      frontmatter {
         title
-        url
+        source {
+          author
+          title
+          url
+        }
       }
     }
   }
-}`
+`;

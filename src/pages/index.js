@@ -1,49 +1,45 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
+import { graphql } from "gatsby";
 
-export default function Index({ data }) {
+import Layout from "../components/layout";
+
+export default ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
+  const post = posts[0].node;
   return (
-    <div className="blog-posts">
-      { posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <div className="blog-post">
-                <Link to={post.fields.slug}><h1>{post.frontmatter.title}</h1></Link>
-                <div
-                  className="blog-post-content"
-                  dangerouslySetInnerHTML={{ __html: post.html }}
-                />
-              </div>
-            )
-          })
-      }
-    </div>
-  )
-}
+    <Layout>
+      <article>
+        <h1>
+          <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
+        </h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
+    </Layout>
+  );
+};
 
 export const pageQuery = graphql`
-query IndexQuery {
+  query IndexQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [fields___date] },
-      filter: {fields: {source: {eq:"posts"}}},
+      sort: { order: DESC, fields: [fields___date] }
+      filter: { fields: { source: { eq: "posts" } } }
       limit: 1
     ) {
-    edges {
-      node {
-        id
-        html
-        excerpt(pruneLength: 280)
-        fields {
-          slug
-          date(formatString: "MMMM DD, YYYY")
-        }
-        frontmatter {
-          title
+      edges {
+        node {
+          id
+          html
+          excerpt(pruneLength: 280)
+          fields {
+            slug
+            date(formatString: "MMMM DD, YYYY")
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }
   }
-}
-`
+`;
