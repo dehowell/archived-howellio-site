@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Link from "gatsby-link";
 import React from "react";
 
+import Head from "../components/Head";
 import Layout from "../components/layout";
 
 // TODO re-add the star for favorite posts
@@ -28,6 +29,7 @@ export default function Archive({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <Layout>
+      <Head title="Archive" />
       <ul>
         <ArchiveLink
           to={"/bibliography/d3"}

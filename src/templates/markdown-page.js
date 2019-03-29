@@ -1,12 +1,14 @@
 import React from "react";
-// import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+
+import Head from "../components/Head";
 import Layout from "../components/layout";
 
 export default ({ data }) => {
   const page = data.markdownRemark;
   return (
     <Layout>
+      <Head title={page.frontmatter.title} />
       <article>
         <h1>{page.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: page.html }} />

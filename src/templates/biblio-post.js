@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 
 import BibliographyRef from "../components/BibliographyRef";
+import Head from "../components/Head";
 import Layout from "../components/layout";
 
 const BibliographyFooter = styled.footer`
@@ -25,6 +26,7 @@ export default ({ data }) => {
   const reference = data.markdownRemark;
   return (
     <Layout>
+      <Head title={`Notes on "${reference.frontmatter.source.title}"`} />
       <article>
         <BibliographyRef
           author={reference.frontmatter.source.author}

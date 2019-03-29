@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "../components/Head";
 import Link from "gatsby-link";
 import { graphql } from "gatsby";
 
@@ -9,6 +10,7 @@ export default ({ data }) => {
   const post = posts[0].node;
   return (
     <Layout>
+      <Head title="Home" />
       <article>
         <h1>
           <Link to={post.fields.slug}>{post.frontmatter.title}</Link>

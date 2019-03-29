@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Link from "gatsby-link";
 import styled from "@emotion/styled";
 
+import Head from "../components/Head";
 import Layout from "../components/layout";
 
 const PrevNextNav = styled.ul`
@@ -26,6 +27,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <Head title={post.frontmatter.title} />
       <article>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
