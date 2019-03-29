@@ -16,6 +16,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     let source = fileNode.sourceInstanceName;
     createNodeField({ node, name: "source", value: source });
 
+    // TODO this is gross and could be organized/abstracted better
     switch (source) {
       case "posts":
         var { date, slug } = extractSlugFromJekyllFilename(filename);
@@ -49,18 +50,67 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
+/*
+ * Create pages for blog posts.
+ */
+const createBlogPosts = ({ actions, graphql }) => {
+  const { createPage } = actions;
+  const template = path.resolve("src/templates/blog-post.js");
+  return graphql(`
+    {
+      allMarkdownRemark(
+        filter: { fields: { source: { eq: "posts" } } }
+        sort: { order: DESC, fields: [fields___date] }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+              date
+              source
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    let posts = result.data.allMarkdownRemark.edges;
+    posts.forEach((post, index) => {
+      const previous =
+        index === posts.length - 1 ? null : posts[index + 1].node;
+      const next = index === 0 ? null : posts[index - 1].node;
+      createPage({
+        path: post.node.fields.slug,
+        component: template,
+        context: {
+          id: post.node.id,
+          slug: post.node.fields.slug,
+          previous,
+          next
+        }
+      });
+    });
+  });
+};
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   const templates = {
     pages: path.resolve("src/templates/markdown-page.js"),
-    posts: path.resolve("src/templates/blog-post.js"),
     bibliography: path.resolve("src/templates/biblio-post.js")
   };
 
   const markdownPosts = graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [fields___date] }) {
+      allMarkdownRemark(
+        filter: { fields: { source: { ne: "posts" } } }
+        sort: { order: DESC, fields: [fields___date] }
+      ) {
         edges {
           node {
             id
@@ -82,19 +132,14 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges;
-    // TODO exclude "pages" from next/previous
-    posts.forEach((post, index) => {
-      const previous =
-        index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
+
+    posts.forEach(post => {
       createPage({
         path: post.node.fields.slug,
         component: templates[post.node.fields.source],
         context: {
           id: post.node.id,
-          slug: post.node.fields.slug,
-          previous,
-          next
+          slug: post.node.fields.slug
         }
       });
     });
@@ -115,7 +160,7 @@ exports.createPages = ({ actions, graphql }) => {
     }
   );
 
-  return Promise.all([markdownPosts]);
+  return Promise.all([createBlogPosts({ actions, graphql }), markdownPosts]);
 };
 
 /*
