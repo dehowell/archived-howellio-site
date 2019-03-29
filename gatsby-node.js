@@ -51,9 +51,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 /*
- * Create pages for blog posts.
+ * Create a blog post for every Markdown file in docs/posts/.
  */
-const createBlogPosts = ({ actions, graphql }) => {
+const createMarkdownBlogPosts = ({ actions, graphql }) => {
   const { createPage } = actions;
   const template = path.resolve("src/templates/blog-post.js");
   return graphql(`
@@ -79,6 +79,7 @@ const createBlogPosts = ({ actions, graphql }) => {
     }
   `).then(result => {
     let posts = result.data.allMarkdownRemark.edges;
+
     posts.forEach((post, index) => {
       const previous =
         index === posts.length - 1 ? null : posts[index + 1].node;
@@ -97,19 +98,56 @@ const createBlogPosts = ({ actions, graphql }) => {
   });
 };
 
-exports.createPages = ({ actions, graphql }) => {
+/*
+ * Create a page for every Markdown file in docs/pages/
+ */
+const createMarkdownPages = ({ actions, graphql }) => {
   const { createPage } = actions;
+  const template = path.resolve("src/templates/markdown-page.js");
+  return graphql(`
+    {
+      allMarkdownRemark(filter: { fields: { source: { eq: "pages" } } }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+              source
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    const posts = result.data.allMarkdownRemark.edges;
 
-  const templates = {
-    pages: path.resolve("src/templates/markdown-page.js"),
-    bibliography: path.resolve("src/templates/biblio-post.js")
-  };
+    posts.forEach(post => {
+      createPage({
+        path: post.node.fields.slug,
+        component: template,
+        context: {
+          id: post.node.id,
+          slug: post.node.fields.slug
+        }
+      });
+    });
+  });
+};
 
-  const markdownPosts = graphql(`
+/*
+ * Create a bibliography entry for every Markdown file under docs/bibliography/
+ */
+const createBibliographyEntries = ({ actions, graphql }) => {
+  const { createPage } = actions;
+  const template = path.resolve("src/templates/biblio-post.js");
+
+  return graphql(`
     {
       allMarkdownRemark(
-        filter: { fields: { source: { ne: "posts" } } }
-        sort: { order: DESC, fields: [fields___date] }
+        filter: { fields: { source: { eq: "bibliography" } } }
       ) {
         edges {
           node {
@@ -119,7 +157,6 @@ exports.createPages = ({ actions, graphql }) => {
             }
             fields {
               slug
-              date
               source
             }
           }
@@ -127,16 +164,12 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors);
-    }
-
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(post => {
       createPage({
         path: post.node.fields.slug,
-        component: templates[post.node.fields.source],
+        component: template,
         context: {
           id: post.node.id,
           slug: post.node.fields.slug
@@ -144,23 +177,35 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
   });
+};
 
-  const bibliographyIndexes = Promise.resolve(Object.keys(bibliographies)).then(
-    topics => {
-      topics.forEach(topic => {
-        let template = path.resolve("src/templates/biblio-index.js");
-        createPage({
-          path: `/bibliography/${topic}`,
-          component: template,
-          context: {
-            topic: topic
-          }
-        });
+/*
+ * Orchestrate together all the page creation functions and tie into build lifecycle.
+ */
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
+
+  const createBibliographyIndexes = Promise.resolve(
+    Object.keys(bibliographies)
+  ).then(topics => {
+    topics.forEach(topic => {
+      let template = path.resolve("src/templates/biblio-index.js");
+      createPage({
+        path: `/bibliography/${topic}`,
+        component: template,
+        context: {
+          topic: topic
+        }
       });
-    }
-  );
+    });
+  });
 
-  return Promise.all([createBlogPosts({ actions, graphql }), markdownPosts]);
+  return Promise.all([
+    createMarkdownBlogPosts({ actions, graphql }),
+    createMarkdownPages({ actions, graphql }),
+    createBibliographyEntries({ actions, graphql }),
+    createBibliographyIndexes
+  ]);
 };
 
 /*
