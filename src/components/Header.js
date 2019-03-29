@@ -53,6 +53,7 @@ export default () => (
             <NavItem to="/about/" title="About" />
             <NavItem to="/codex-vitae/" title="Codex Vitae" />
             <NavItem to="/archive/" title="Archive" />
+            <NavItem to="/search/" title="Search" />
           </Menu>
         </nav>
       </header>

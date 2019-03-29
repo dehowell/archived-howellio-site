@@ -1,29 +1,9 @@
-import { css } from "@emotion/core";
 import { graphql } from "gatsby";
-import Link from "gatsby-link";
 import React from "react";
 
+import ArchiveLink from "../components/ArchiveLink";
 import Head from "../components/Head";
 import Layout from "../components/layout";
-
-// TODO re-add the star for favorite posts
-const ArchiveLink = props => {
-  const content = props.favorite ? " ★" : "";
-  return (
-    <li
-      css={css`
-        list-style-type: none;
-        &::after {
-          font-size: smaller;
-          content: "${content}";
-          color: #767676;
-        }
-      `}
-    >
-      <Link to={props.to}>{props.title}</Link>
-    </li>
-  );
-};
 
 export default function Archive({ data }) {
   const { edges: posts } = data.allMarkdownRemark;

@@ -78,6 +78,28 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-lunr",
+      options: {
+        languages: [
+          {
+            name: "en"
+          }
+        ],
+        fields: [
+          { name: "title", store: true, attributes: { boost: 20 } },
+          { name: "content" },
+          { name: "slug", store: true }
+        ],
+        resolvers: {
+          MarkdownRemark: {
+            title: node => node.frontmatter.title,
+            content: node => node.rawMarkdownBody,
+            slug: node => node.fields.slug
+          }
+        }
+      }
+    },
+    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-72069603-1",
