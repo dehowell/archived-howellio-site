@@ -6,7 +6,7 @@ module.exports = {
     author: "David Howell",
     description:
       "…as unprincipled as the gods, and as much a jack-of-all-trades.",
-    siteUrl: "https://www.howell.io/",
+    siteUrl: "https://www.howell.io",
     social: {
       twitter: "dehowell"
     }

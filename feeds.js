@@ -14,7 +14,7 @@ module.exports = [
     query: `
      {
        allMarkdownRemark(
-         limit: 1000,
+         limit: 20,
          sort: { order: DESC, fields: [fields___date] },
          filter: { fields: { source: { eq: "posts" } } }
        ) {
