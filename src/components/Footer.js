@@ -39,13 +39,11 @@ export default () => {
             <a href="https://buttondown.email/dehowell">
               <FaEnvelope /> Subscribe to my newsletter, The Marginalia Club
             </a>
+            <a href="javascript:gaOptOut();">Deactive Google Analytics</a>
+            <br />
           </Footer>
         );
       }}
     />
   );
 };
-
-// TODO re-add google analytics
-// <a href="javascript:gaOptOut();">Deactive Google Analytics</a>
-// <br />
