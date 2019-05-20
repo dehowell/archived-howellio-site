@@ -7,7 +7,7 @@ I'm most comfortable hammering out posts of five hundred or so words. That's eno
 
 I'm tired of being limited by this struggle. I intend to look directly at this discomfort and fix it — or at least figure how to engineer around it. Otherwise, I will spiral between aspiration and disappointment indefinitely, and that is no way to live.
 
-I'm working to get my newsletter ()["The Marginalia Club"][1] — see footer for a link to subscribe) published on a regular cadence, but I need more than a regular deadline to break out of my five hundred word bottleneck. Without otherwise changing my habits, I'll just panic and write the same old kind of fragmented five hundred words every time the deadline rolls around.
+I'm working to get my newsletter (["The Marginalia Club"][1] — see footer for a link to subscribe) published on a regular cadence, but I need more than a regular deadline to break out of my five hundred word bottleneck. Without otherwise changing my habits, I'll just panic and write the same old kind of fragmented five hundred words every time the deadline rolls around.
 
 Austin Kleon has a method of nested journalling practices, using his ["notebook turducken"][2]:
 
