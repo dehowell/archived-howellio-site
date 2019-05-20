@@ -1,7 +1,14 @@
 import Typography from "typography";
-import moragaTheme from "typography-theme-moraga";
+import theme from "typography-theme-moraga";
 
-const typography = new Typography(moragaTheme);
+theme.overrideThemeStyles = ({ rhythm }, options) => ({
+  figcaption: {
+    fontStyle: "italic",
+    textAlign: "center"
+  }
+});
+
+const typography = new Typography(theme);
 
 export default typography;
 export const { rhythm } = typography;
