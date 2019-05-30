@@ -2,7 +2,8 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 const bibliographies = {
-  d3: "D3.js"
+  d3: "D3.js",
+  drawdown: "Drawdown"
 };
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
