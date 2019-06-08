@@ -1,6 +1,6 @@
 ---
-title: 'Only foolish choices'
-date: '2019-02-07'
+title: "Only foolish choices"
+date: "2019-02-07"
 ---
 
 In Marilynne Robinson's novel _Gilead_, the protagonist tells a story about a cascading comedy of errors, to which he comments:
