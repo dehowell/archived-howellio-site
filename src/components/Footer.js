@@ -36,11 +36,10 @@ export default () => {
               <FaTwitter /> @{data.site.siteMetadata.social.twitter}
             </a>
             <br />
-            <a href="https://buttondown.email/dehowell">
+            <a href="/newsletter">
               <FaEnvelope /> Subscribe to my newsletter, The Marginalia Club
             </a>
             <br />
-            <a href="javascript:gaOptOut();">Deactive Google Analytics</a>
           </Footer>
         );
       }}
