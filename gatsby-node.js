@@ -59,7 +59,10 @@ const createMarkdownBlogPosts = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        filter: { fields: { source: { eq: "posts" } } }
+        filter: {
+          fields: { source: { eq: "posts" } },
+          frontmatter: { draft: { ne: true } }
+        }
         sort: { order: DESC, fields: [fields___date] }
       ) {
         edges {
@@ -106,7 +109,10 @@ const createMarkdownPages = ({ actions, graphql }) => {
   const template = path.resolve("src/templates/markdown-page.js");
   return graphql(`
     {
-      allMarkdownRemark(filter: { fields: { source: { eq: "pages" } } }) {
+      allMarkdownRemark(filter: {
+        fields: { source: { eq: "pages" } },
+        frontmatter: { draft: { ne: true } }
+      }) {
         edges {
           node {
             id
@@ -147,7 +153,10 @@ const createBibliographyEntries = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        filter: { fields: { source: { eq: "bibliography" } } }
+        filter: {
+          fields: { source: { eq: "bibliography" } },
+          frontmatter: { draft: { ne: true } }
+        }
       ) {
         edges {
           node {
