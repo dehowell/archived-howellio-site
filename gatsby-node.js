@@ -16,6 +16,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     let source = fileNode.sourceInstanceName;
     createNodeField({ node, name: "source", value: source });
 
+    let isDraft = ("draft" in node.frontmatter) && node.frontmatter.draft;
+    createNodeField({ node, name: "draft", value: isDraft });
+
     // TODO this is gross and could be organized/abstracted better
     switch (source) {
       case "posts":
@@ -60,8 +63,10 @@ const createMarkdownBlogPosts = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         filter: {
-          fields: { source: { eq: "posts" } },
-          frontmatter: { draft: { ne: true } }
+          fields: {
+            source: { eq: "posts" },
+            draft: { ne: true }
+          }
         }
         sort: { order: DESC, fields: [fields___date] }
       ) {
@@ -110,8 +115,10 @@ const createMarkdownPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(filter: {
-        fields: { source: { eq: "pages" } },
-        frontmatter: { draft: { ne: true } }
+        fields: {
+          source: { eq: "pages" },
+          draft: { ne: true }
+        }
       }) {
         edges {
           node {
@@ -154,8 +161,10 @@ const createBibliographyEntries = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         filter: {
-          fields: { source: { eq: "bibliography" } },
-          frontmatter: { draft: { ne: true } }
+          fields: {
+            source: { eq: "bibliography" },
+            draft: { ne: true }
+          }
         }
       ) {
         edges {
