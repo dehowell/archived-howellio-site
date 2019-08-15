@@ -50,7 +50,7 @@ export default () => (
         <Description>{data.site.siteMetadata.description}</Description>
         <nav>
           <Menu>
-            <NavItem to="/about/" title="Start Here" />
+            <NavItem to="/start/" title="Start Here" />
             <NavItem to="/newsletter/" title="Newsletter" />
             <NavItem to="/archive/" title="Archive" />
             <NavItem to="/search/" title="Search" />
