@@ -2,7 +2,7 @@
 title: "David Howell"
 ---
 
-![](/img/portrait.jpg)
+![](/img/portrait02.jpg)
 
 Howdy! Thank you for visiting.
 
@@ -17,6 +17,8 @@ I enjoy mischievous and esoteric experiments in software, music, and literature.
 - [Exploring Conway's Game of Life](https://www.howell.io/2016/07/08/exploring-conways-game-of-life/)
 - [The Varieties of Door-Opening Experience](https://www.howell.io/2016/04/12/the-varieties-of-door-opening-experience/)
 - [Buddhism As I Understand It](https://www.howell.io/2016/02/10/buddhism-as-i-understand-it/)
+
+![](/img/portrait01.jpg)
 
 [^1]:   co-created with [Jeffrey Pierce](https://jeffreypierce.net) for the [Burlington City Arts' "User Required" exhibition](http://www.burlingtoncityarts.org/Exhibition/user-required)
 [^2]: 	[D3 (Data-Driven Documents)](https://d3js.org) is a JavaScript data visualization library created by Mike Bostock.
