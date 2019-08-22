@@ -69,10 +69,14 @@ I documented my own journey through [the D3 learning curve with an annotated bib
 
 ### Analog Index
 
+I scribble diagrams, sketchnote while reading, and journal profusely. Whenever I fill a notebook, I flip through it to log bulletpoints on it's highlights and to capture any images that stand out.
+
 <figure>
   <img src="/img/analog_index.png"/>
   <figcaption>Digital index of my notebooks</figcaption>
 </figure>
+
+It's a nice review practice that makes me feel grateful for all the interesting things I get to learn.
 
 ### An Ontology of Demented Java Types
 
