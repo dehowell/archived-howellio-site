@@ -16,7 +16,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     let source = fileNode.sourceInstanceName;
     createNodeField({ node, name: "source", value: source });
 
-    let isDraft = ("draft" in node.frontmatter) && node.frontmatter.draft;
+    let isDraft = "draft" in node.frontmatter && node.frontmatter.draft;
     createNodeField({ node, name: "draft", value: isDraft });
 
     // TODO this is gross and could be organized/abstracted better
@@ -62,12 +62,7 @@ const createMarkdownBlogPosts = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        filter: {
-          fields: {
-            source: { eq: "posts" },
-            draft: { ne: true }
-          }
-        }
+        filter: { fields: { source: { eq: "posts" }, draft: { ne: true } } }
         sort: { order: DESC, fields: [fields___date] }
       ) {
         edges {
@@ -111,20 +106,18 @@ const createMarkdownBlogPosts = ({ actions, graphql }) => {
  */
 const createMarkdownPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const template = path.resolve("src/templates/markdown-page.js");
+  const defaultTemplate = path.resolve("src/templates/markdown-page.js");
   return graphql(`
     {
-      allMarkdownRemark(filter: {
-        fields: {
-          source: { eq: "pages" },
-          draft: { ne: true }
-        }
-      }) {
+      allMarkdownRemark(
+        filter: { fields: { source: { eq: "pages" }, draft: { ne: true } } }
+      ) {
         edges {
           node {
             id
             frontmatter {
               title
+              template
             }
             fields {
               slug
@@ -138,6 +131,11 @@ const createMarkdownPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(post => {
+      console.log();
+      let template = post.node.frontmatter.template
+        ? path.resolve(`src/templates/${post.node.frontmatter.template}`)
+        : defaultTemplate;
+
       createPage({
         path: post.node.fields.slug,
         component: template,
@@ -161,10 +159,7 @@ const createBibliographyEntries = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         filter: {
-          fields: {
-            source: { eq: "bibliography" },
-            draft: { ne: true }
-          }
+          fields: { source: { eq: "bibliography" }, draft: { ne: true } }
         }
       ) {
         edges {
