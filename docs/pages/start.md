@@ -8,7 +8,7 @@ template: "start-here.js"
   <figcaption>This was a very good cold-brew, courtesy of Brio Coffeeworks</figcaption>
 </figure>
 
-Thank you for visiting!
+Thank you for visiting.
 
 I'm a software architect with more than decade of experience engineering and operating reliable distributed systems, in applications domains spanning content management, analytics, and programmatic advertising. I've led teams through the stabilization of fragile legacy systems, the development of innovative new products, and everything in between.
 
