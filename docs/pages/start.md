@@ -8,9 +8,15 @@ template: "start-here.js"
   <figcaption>This was a very good cold-brew, courtesy of Brio Coffeeworks</figcaption>
 </figure>
 
-Thank you for visiting.
+Thank you for visiting!
 
-I'm a software architect and normie suburb dad with an ambitious reading list. My background is in experimental nuclear physics and having interests too diverse to tolerate finishing a PhD; instead, I've found software a more congenial home for a curious generalist. My current operating theory is that the future of software development is as much queuing theory and business ethnography as it is computer science.
+I'm a software architect with more than decade of experience engineering and operating reliable distributed systems, in applications domains spanning content management, analytics, and programmatic advertising. I've led teams through the stabilization of fragile legacy systems, the development of innovative new products, and everything in between.
+
+I came to software from experimental nuclear physics, after realizing that I was drawn more to writing code than reading physics papers. The fundamental nature of reality is neat and all, but there's at least a lifetime of fascination in the dynamics of software-enabled organizations.
+
+My current operating theory is that the future of software has as much to do with queuing theory, the archeology of corporate politics, and business ethnography as it does computer science.
+
+Software is a messy, interdisciplinary art. I aim to find joy in the chaos and help others thrive in its practice.
 
 ## Favorite Articles
 
@@ -79,8 +85,6 @@ Oblique jokes and cross-domain encoding are my favorite ways to learn. If you're
 public interface Obtuse {
 }
 ```
-
-I enjoy mischievous and esoteric experiments in software, music, and literature. I'm also endlessly fascinated by infrastructure (physical and digital), how people collaborate to keep it running, and how much we can learn when things go wrong. All of my interests wind their way back to philosophy; not because I believe philosophy provides the ultimate foundation of knowledge (I don't), but because the best philosophers have pushed the art of exploratory conceptual modeling further than anyone else. My favorites are Manuel De Landa, Martha Nussbaum, and Derek Parfit.
 
 [pierce]: https://jeffreypierce.net
 [bca]: http://www.burlingtoncityarts.org/Exhibition/user-required
