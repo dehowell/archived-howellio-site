@@ -43,7 +43,7 @@ In collaboration with [Jeffrey Pierce][pierce], I built the installation "in.c" 
 
 ### Codex Vitae
 
-Following the sterling examples of [Buster Benson](https://busterbenson.com/), I maintain my own [Codex Vitae](https://github.com/dehowell/codex-vitae "David Howell's Codex Vitae") as an ongoing record of my philosophical scaffolding. While I love a good conceptual abstraction for its own sake, I'm most interested in philosophy as something to be _lived_.
+Following the sterling example of [Buster Benson](https://busterbenson.com/), I maintain my own [Codex Vitae](https://github.com/dehowell/codex-vitae "David Howell's Codex Vitae") as an ongoing record of my philosophical scaffolding. While I love a good conceptual abstraction for its own sake, I'm most interested in philosophy as something to be _lived_.
 
 I read my Codex Vitae as part of my weekly review, as a way of re-centering on my values and lessons I've learned.
 
