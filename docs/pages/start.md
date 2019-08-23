@@ -84,9 +84,9 @@ Oblique jokes and cross-domain encoding are my favorite ways to learn. If you're
 
 ```java
 /**
- * Attempts to use the Java Reflection API on objects that implement
- * Obtuse will always provide unhelpful, but technically correct,
- * type signatures.
+ * Attempts to use the Java Reflection API on objects that
+ * implement Obtuse will always provide unhelpful, but
+ * technically correct, type signatures.
  */
 public interface Obtuse {
 }
