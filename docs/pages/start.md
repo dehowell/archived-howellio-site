@@ -20,7 +20,7 @@ Software is a messy, interdisciplinary art. I aim to find joy in the chaos and h
 
 Get in touch [on Twitter](http://twitter.com/dehowell) or by [email](mailto:dave@howell.io).
 
-## Favorite Articles
+## Best Articles
 
 - [Exploring Conway's Game of Life](https://www.howell.io/2016/07/08/exploring-conways-game-of-life/)
 - [The Varieties of Door-Opening Experience](https://www.howell.io/2016/04/12/the-varieties-of-door-opening-experience/)
