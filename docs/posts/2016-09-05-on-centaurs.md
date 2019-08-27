@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "On Centaurs"
 date: 2016-09-05T20:48:39-04:00
 ---
@@ -18,7 +17,7 @@ As Kenneth Goldsmith says (paraphrasing Marjorie Perloff, in his [_Uncreative Wr
 
 > [...] today's writer resembles more a programmer than a tortured genius, brilliantly conceptualizing, constructing, executing, and maintaining a writing machine.
 
-----
+---
 
 I recently started a book club at work to discuss Vaughn Vernon's [_Implementing Domain-Driven Design_](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577). Domain-driven design is a software engineering practice where we attempt to encode the semantics of a problem domain using the same language as the experts in the domain, as opposed to just capturing the bare mechanics of how an expert solves a problem. By making the language of the code resemble the language of the problem domain, the hope is that _the code itself becomes a tool for teaching the organization how to solve problems_. The alternative (more often found in the wild) is a convoluted scaffolding of scripts written by an expert with enough skill to build a jig for automating their work. To varying degrees, the jig is incomprehensible to anyone but the original author (and perhaps an apprentice or two). Stewart Brand captures the spirit of such a system well in _The Clock of the Long Now_:
 
@@ -26,9 +25,8 @@ I recently started a book club at work to discuss Vaughn Vernon's [_Implementing
 
 Domain-driven design feels to me like a way out of this trap, but at the same time I think about the end product in terms of _centaurs_ and the power of experts able to build their own tools. If you'd like to hear some blistering snark, ask any professional software developer how they feel about code developed by "academics"; but the amateur coder nonetheless has the potential to augment some other expertise to delightful ends.
 
-[^1]:
-    I can't believe I never noticed this connection before today:
+[^1]: I can't believe I never noticed this connection before today:
 
-    > I have used a custom-designed application, created by the programmer Maciej Ceglowski at the National Institute for Technology and Liberal Education, and now use an off-the-shelf program called DEVONthink.
+  > I have used a custom-designed application, created by the programmer Maciej Ceglowski at the National Institute for Technology and Liberal Education, and now use an off-the-shelf program called DEVONthink.
 
-    Maciej is the creator of [Pinboard](https://pinboard.in/u:dehowell) and a critical [gadfly](https://en.wikipedia.org/wiki/Social_gadfly "Social gadfly") to [the modern, ad-driven web](http://idlewords.com/talks/ "Talks by Maciej Ceglowski").
+  Maciej is the creator of [Pinboard](https://pinboard.in/u:dehowell) and a critical [gadfly](https://en.wikipedia.org/wiki/Social_gadfly "Social gadfly") to [the modern, ad-driven web](http://idlewords.com/talks/ "Talks by Maciej Ceglowski").

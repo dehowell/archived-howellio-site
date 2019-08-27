@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Implementing a Slow Response Meter With Dropwizard"
 date: 2016-03-06T15:28:04-05:00
 ---
@@ -34,6 +33,5 @@ if (duration > SLOW_THRESHOLD) {
 
 Even better, wrap this metrics boilerplate in an aspect and configure the threshold with an annotation - now you'll have fewer false alarms with hardly any extra work.
 
-[^1]:	Well, many application use an internal metrics library inspired by Dropwizard, but we use both and what I'm going to say here applies to both libraries.
-
-[^2]:	By which I mean [Grafana](http://grafana.org). I find Graphite faster for ad-hoc stuff, but it really is an eyesore.
+[^1]: Well, many application use an internal metrics library inspired by Dropwizard, but we use both and what I'm going to say here applies to both libraries.
+[^2]: By which I mean [Grafana](http://grafana.org). I find Graphite faster for ad-hoc stuff, but it really is an eyesore.

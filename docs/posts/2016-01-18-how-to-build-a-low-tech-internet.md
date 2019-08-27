@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to Build a Low-tech Internet"
 date: 2016-01-18T20:35:55-05:00
 ---

@@ -1,5 +1,6 @@
 ---
 title: "The Gentle Art of Enterprise Code Review"
+date: 2014-11-13
 ---
 
 Sage Sharp, [The Gentle Art of Patch Review][ref1]:

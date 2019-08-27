@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Robots Will Find You"
 date: "2016-12-07 06:11:37 -0500"
 ---
@@ -13,6 +12,5 @@ This morning, I started a new web server at a previously unused domain. Google a
 ```
 
 I'm not running anything but NGINX serving static files, but let this be a lesson. Never, ever think that you can run your own Wordpress server (or anything else) and not care about security. Robots will find you and start trying exploits, almost as soon as you've finished setup.
-
 
 The DNS entry for the site is about twelve hours old&mdash;I wonder if that's how word got out that my new domain popped up.

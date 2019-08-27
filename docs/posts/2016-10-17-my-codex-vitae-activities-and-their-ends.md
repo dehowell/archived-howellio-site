@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "My Codex Vitae: Activities & Their Ends"
 date: 2016-10-17T13:38:29-04:00
 ---

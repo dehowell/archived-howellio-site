@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "My Codex Vitae: Beliefs"
 date: 2016-10-09T15:28:31-04:00
 ---
@@ -35,7 +34,7 @@ The arrow of time is real. Although microscopic dynamics are time-reversible, th
 
 In general, question any conclusions derived from extrapolating to macroscopic situations the results of clean-room, microscopic, spherical-cow style thought experiments. _Everything_ is situated in contexts that violate the assumptions of your typical thought experiment.
 
-We must often gain  _experiential knowledge_ of a theoretical system's virtues before we can develop our full understanding. We find and embrace strategies that help us achieve equanimity and construct the discourse to explain those strategies. Even a fully developed philosopical/spiritual theory has to be taught and learned via _spiritual exercises_ (See Pierre Hadot's [_Philosophy as a Way of Life_](https://www.amazon.com/Philosophy-Way-Life-Spiritual-Exercises/dp/0631180338) for an extended version of this argument, relating to Platonic Christian theology and the Stoics). **Before we can believe, we must act.** The experiental knowledge that produces motivation often fades within days, unless reinforced by ritual and practice. **Action precedes motivation**.
+We must often gain _experiential knowledge_ of a theoretical system's virtues before we can develop our full understanding. We find and embrace strategies that help us achieve equanimity and construct the discourse to explain those strategies. Even a fully developed philosopical/spiritual theory has to be taught and learned via _spiritual exercises_ (See Pierre Hadot's [_Philosophy as a Way of Life_](https://www.amazon.com/Philosophy-Way-Life-Spiritual-Exercises/dp/0631180338) for an extended version of this argument, relating to Platonic Christian theology and the Stoics). **Before we can believe, we must act.** The experiental knowledge that produces motivation often fades within days, unless reinforced by ritual and practice. **Action precedes motivation**.
 
 The self is not sharply bounded by my skin: mind is embodied in my environment (See Andy Clark's [_Supersizing the Mind_](https://www.amazon.com/Supersizing-Mind-Embodiment-Cognitive-Philosophy/dp/0199773688/ref=sr_1_1?s=books&ie=UTF8&qid=1476041406&sr=1-1&keywords=supersizing+the+mind) for a survey of the embodied cognition argument). When I speak to another human, we become a distributed cognitive network through the sensory connections (sight, sound, smell) between our nervous systems.
 

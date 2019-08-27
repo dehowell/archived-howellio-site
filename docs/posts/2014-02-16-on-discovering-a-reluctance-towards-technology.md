@@ -1,11 +1,11 @@
 ---
 title: "On Discovering a Reluctance Towards Technology"
-layout: post
+date: 2014-02-26
 ---
 
 There is a quote from [Steve Jobs][ref1] that I return to, over and over:
 
-> I think one of the things that really separates us from the high primates is that we’re tool builders. I read a study that measured the efficiency of locomotion for various species on the planet. The condor used the least energy to move a kilometer. And, humans came in with a rather unimpressive showing, about a third of the way down the list. It was not too proud a showing for the crown of creation. So, that didn’t look so good. But, then somebody at Scientific American had the insight to test the efficiency of locomotion for a man on a bicycle. And, a man on a bicycle, a human on a bicycle, blew the condor away, completely off the top of the charts.  And that’s what a computer is to me. What a computer is to me is it’s the most remarkable tool that we’ve ever come up with, and it’s the equivalent of a bicycle for our minds.
+> I think one of the things that really separates us from the high primates is that we’re tool builders. I read a study that measured the efficiency of locomotion for various species on the planet. The condor used the least energy to move a kilometer. And, humans came in with a rather unimpressive showing, about a third of the way down the list. It was not too proud a showing for the crown of creation. So, that didn’t look so good. But, then somebody at Scientific American had the insight to test the efficiency of locomotion for a man on a bicycle. And, a man on a bicycle, a human on a bicycle, blew the condor away, completely off the top of the charts. And that’s what a computer is to me. What a computer is to me is it’s the most remarkable tool that we’ve ever come up with, and it’s the equivalent of a bicycle for our minds.
 
 This is the promise of computers, of technology, the promise that captivated me in the start. Not this quote literally, since I didn't discover it until just a couple of years ago. But the promise of the ultimate tool, the ultimate mental assistant. In my youth, I believed foolishly that I could (should be able to) remember all of my appointments, my school assignments, my obligations in my head. That writing anything down was a sign of weakness. That worked in an intellectually undemanding rural Indiana public high school, where reading comprehension and good test taking skills meant finishing every assignment during interstitial time in class and therefore never needing to remember to do it later.
 

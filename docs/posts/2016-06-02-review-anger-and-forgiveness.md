@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Review: Anger and Forgiveness"
 date: 2016-06-02T04:31:11-04:00
 ---
@@ -22,18 +21,15 @@ However, she rejects _absolute_ detachment from those goods. Our reputation, hea
 
 Outside of mathematics, I'm skeptical of attempts to derive _everything_ from a small set of axioms (even if the exercise can be interesting). Stoic metaphysics leans a little too far in that direction, so I'm grateful to Martha Nussbaum for offering another path to similar ideas -- one that better fits my temperment. Philosophy books can be intense, but _Anger and Forgiveness_ was quite readable and practical -- I highly recommend it.
 
-[^1]:	Or at least in my Twitter stream and RSS feeds.
+[^1]: Or at least in my Twitter stream and RSS feeds.
+[^2]: As my heavily creased and flagged copy of Seneca's _Letters from a Stoic_ will attest.
+[^3]: From personal experience, it is in fact _critical_ that you not try to suppress the experience of anger. That doesn't mean you have to endorse it, but the initial, involuntary feeling of anger is a physiological brute fact. Clenching your teeth against it will not help you move past anger to a more useful stance.
+[^4]: Personal experience, Velocity New York 2014. I am proud to say that I handled it without any anger, though I can't say the same for how I react to other drivers...
 
-[^2]:	As my heavily creased and flagged copy of Seneca's _Letters from a Stoic_ will attest.
-
-[^3]:	From personal experience, it is in fact _critical_ that you not try to suppress the experience of anger. That doesn't mean you have to endorse it, but the initial, involuntary feeling of anger is a physiological brute fact. Clenching your teeth against it will not help you move past anger to a more useful stance.
-
-[^4]:	Personal experience, Velocity New York 2014. I am proud to say that I handled it without any anger, though I can't say the same for how I react to other drivers...
-
-[1]:	http://ryanholiday.net/stoicism-a-practical-philosophy-you-can-actually-use/
-[2]:	https://www.youtube.com/watch?v=88Ui_nflxkA
-[3]:	http://opinionator.blogs.nytimes.com/2015/02/02/how-to-be-a-stoic/?pagewanted=all&_r=0
-[4]:	https://www.brainpickings.org/2014/09/01/seneca-on-the-shortness-of-life/
-[5]:	http://classics.mit.edu/Epictetus/epicench.html
-[6]:	http://www.amazon.com/dp/0199335877
-[7]:	https://en.wikipedia.org/wiki/Hatfield%E2%80%93McCoy_feud
+[1]: http://ryanholiday.net/stoicism-a-practical-philosophy-you-can-actually-use/
+[2]: https://www.youtube.com/watch?v=88Ui_nflxkA
+[3]: http://opinionator.blogs.nytimes.com/2015/02/02/how-to-be-a-stoic/?pagewanted=all&_r=0
+[4]: https://www.brainpickings.org/2014/09/01/seneca-on-the-shortness-of-life/
+[5]: http://classics.mit.edu/Epictetus/epicench.html
+[6]: http://www.amazon.com/dp/0199335877
+[7]: https://en.wikipedia.org/wiki/Hatfield%E2%80%93McCoy_feud

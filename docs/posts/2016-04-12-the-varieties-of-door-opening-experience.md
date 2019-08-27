@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Varieties of Door-Opening Experience"
 date: 2016-04-12T18:49:33-04:00
 tags:
@@ -19,4 +18,4 @@ I could probably fix some of these problems, but over the last year our habits h
 
 No matter how steady or stable you think your house is, the ground moves underneath it. The water table rises and falls. Frost heaves shift your foundation unevenly. Temperature and humidity cycle with the season, so door frames expand and contract until they are off-square. No structure can withstand these forces forever. Instead of violated expectations and frustration, I try instead to let a door that sticks be a little puzzle to solve, bringing me back into the moment. Over time, these doors have just become old friends.
 
-[^1]:	It's possible that I'm just _really shitty_ at changing door knobs.
+[^1]: It's possible that I'm just _really shitty_ at changing door knobs.

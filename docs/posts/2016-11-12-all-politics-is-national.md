@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Five Thirty Eight: All Politics is National"
 date: 2016-11-12T06:40:29-04:00
 ---
@@ -17,11 +16,12 @@ The Republican Party has a hell of a ground game in state legislatures. Among ot
 I spent my morning reading up on [my state's government][5] and getting ready to get more involved. Please consider doing the same.
 
 [^1]:
-    Those crying "voter fraud" are not acting in good faith, but deliberately seeking to disenfranchise minority voters. But I'm linking to Allen Downey's argument here because I think it could be effective with people who:
 
-    - have been convinced by fear-mongering that voter fraud is actually a problem
-    - would not support intentionally suppressing minority vote
-    - would react badly to the accusation that voter ID laws are racist
+  Those crying "voter fraud" are not acting in good faith, but deliberately seeking to disenfranchise minority voters. But I'm linking to Allen Downey's argument here because I think it could be effective with people who:
+
+  - have been convinced by fear-mongering that voter fraud is actually a problem
+  - would not support intentionally suppressing minority vote
+  - would react badly to the accusation that voter ID laws are racist
 
 [1]: http://fivethirtyeight.com/features/all-politics-is-national/
 [2]: http://digital.vpr.net/topic/vermont-legislature

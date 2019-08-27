@@ -1,6 +1,6 @@
 ---
 title: "iOS Dictation Versus Children's Books"
-layout: post
+date: 2015-06-18
 ---
 
 Here's a machine-generated oddity to start the day: [_Little Blue Trick_][1] filtered through iOS 8 voice dictation.
@@ -58,7 +58,7 @@ Here's a machine-generated oddity to start the day: [_Little Blue Trick_][1] fil
 > people  
 > they  
 > croak  
-> my  
+> my
 >
 > BBB
 

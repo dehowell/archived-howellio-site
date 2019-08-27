@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Event Source Yourself a Hash Map"
 date: 2016-09-12T19:15:30-04:00
 tags:
@@ -27,10 +26,9 @@ That sounded good to me in theory, but it wasn't until today that I started _rea
 A Kafka topic is a strictly-ordered sequence of key-value pairs. I was thinking that we would store edits to the blacklist as timestamp-keyed commands on a topic, which will be consumed by all the applications that need the blacklist.
 
 | message # | key (time)          | value (command)           |
-|-----------|---------------------|---------------------------|
+| :-------- | :------------------ | :------------------------ |
 | 0         | 2016-09-12 15:32:00 | `BLACKLIST 10.0.0.0/24`   |
 | 1         | 2016-09-12 16:01:13 | `WHITELIST 10.0.0.100/32` |
-
 
 When the application pulls message 0, it parses the blacklist command and adds the whole range from `10.0.0.1` to `10.0.0.255`. Message 1 causes it to split that range into two, leaving `10.0.0.100` as a gap in the middle. This topic has the semantics of a stream of events, but -- according to [Jay Kreps][9] -- a stream can always be viewed as a table (or a series of tables at different moments in time). This has to be true, because an event-sourcing application is using the change events to build its view. That view is at least conceptually a table, though it may be backed by all kinds of data structures[^3].
 
@@ -39,7 +37,7 @@ But here was my revelation from this morning, once I got what Kafka Streams arti
 My first exposure to messaging was RabbitMQ, where applications deal with _queues_. I had gotten so hung up on the queue model for messaging that I was forgetting that a Kafka topic is a _transaction log_, not a queue. The keys don't need to be timestamps. Whenever the blacklist is edited, we can publish the changed records to another topic. In order to handle this topic with table-like semantics, we just take the highest numbered message for a key as the truth.
 
 | message # | key (start IP) | value (end IP) |
-|-----------|----------------|----------------|
+| :-------- | :------------- | :------------- |
 | 0         | `10.0.0.1`     | `10.0.0.255`   |
 | 1         | `10.0.0.1`     | `10.0.0.99`    |
 | 2         | `10.0.0.101`   | `10.0.0.255`   |
@@ -48,7 +46,7 @@ On this topic, message 0 isn't relevant any more because it's been superseded by
 
 We haven't implemented this yet, so I'm not sure if it's going to work. There are probably thorny details that we'll find out about the hard way, but it feels promising.
 
-----
+---
 
 Julia Evans [wrote a thing][3] about why she blogs about new things as she learns them, rather than waiting until she's an expert.
 
@@ -56,16 +54,11 @@ Julia Evans [wrote a thing][3] about why she blogs about new things as she learn
 >
 > And even though I was a beginner to both Rust and operating systems development, it turned out that some of these blog posts were really popular! People were learning from them!
 
-So in that spirit, I thought I'd share. Besides, today is an [eep day][1] for my Beeminder goal to [blog more][2]. It was this or cough up $10!
+So in that spirit, I thought I'd share. Besides, today is an [eep day][1] for my Beeminder goal to [blog more][2]. It was this or cough up \$10!
 
-[^1]:
-    I remember this coming up a lot on [Hacker News][7] that year.
-
-[^2]:
-    My friend Josh Dickerson is talking more about [how we use Kafka][8] at VT Code Camp this year.
-
-[^3]:
-    We're using a [Scala TreeMap](http://www.scala-lang.org/api/2.11.8/#scala.collection.immutable.TreeMap) to store the blacklist.
+[^1]: I remember this coming up a lot on [Hacker News][7] that year.
+[^2]: My friend Josh Dickerson is talking more about [how we use Kafka][8] at VT Code Camp this year.
+[^3]: We're using a [Scala TreeMap](http://www.scala-lang.org/api/2.11.8/#scala.collection.immutable.TreeMap) to store the blacklist.
 
 [1]: http://blog.beeminder.com/glossary/#e
 [2]: https://www.beeminder.com/dehowell/publish
