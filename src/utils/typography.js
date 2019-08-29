@@ -30,6 +30,24 @@ const MarginaliaTheme = {
         color: gray(41),
         textDecorationColor: indexCardBlue
       },
+      h1: {
+        marginBottom: rhythm(0.4)
+      },
+      h2: {
+        marginBottom: rhythm(0.4)
+      },
+      h3: {
+        marginBottom: rhythm(0.4)
+      },
+      h4: {
+        marginBottom: rhythm(0.4)
+      },
+      h5: {
+        marginBottom: rhythm(0.4)
+      },
+      h6: {
+        marginBottom: rhythm(0.4)
+      },
       blockquote: {
         ...adjustFontSizeTo('15px'),
         lineHeight: 1.3,
