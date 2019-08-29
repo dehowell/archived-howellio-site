@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Exploring Conway's Game of Life
 date: 2016-07-08T20:39:56-04:00
 tags:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Building the Binomial Distribution From Scratch"
 date: 2016-09-26T19:14:36-04:00
 ---

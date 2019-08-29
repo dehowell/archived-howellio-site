@@ -1,6 +1,6 @@
 ---
 title: "Manuel DeLanda's Philosophical Chemistry"
-layout: post
+date: 2015-11-06
 ---
 
 I just started reading Manuel DeLanda's [new book][1], _Philosophical Chemistry_, last night. I could tell from just the opening paragraph that this is _exactly_ the book I want to be reading right now:

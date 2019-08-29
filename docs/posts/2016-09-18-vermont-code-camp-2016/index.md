@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Vermont Code Camp 2016"
 date: 2016-09-18T14:59:53-04:00
 ---
