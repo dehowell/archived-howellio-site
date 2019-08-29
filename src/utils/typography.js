@@ -18,7 +18,7 @@ const MarginaliaTheme = {
       styles: ['400', '400i', '600', '600i']
     }
   ],
-  headerFontFamily: ['Playfair Display', 'serif'],
+  headerFontFamily: ['Montserrat', 'sans-serif'],
   bodyFontFamily: ['Spectral', 'serif'],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => (
     {
