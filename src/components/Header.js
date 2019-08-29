@@ -6,6 +6,7 @@ import { rhythm } from "../utils/typography";
 
 const Title = styled.h1`
   margin: 0;
+  font-family: Montserrat, sans-serif;
 `;
 
 const Description = styled.p`
