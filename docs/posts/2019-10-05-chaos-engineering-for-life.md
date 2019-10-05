@@ -31,10 +31,12 @@ I was afraid parenting would make it hard to keep up with basic self-care, let a
 
 The steady stream of turbulent conditions my children provide prevent me from getting away with bad habits. I go to bed earlier, knowing I might be woken up in the middle of the night. I need to maintain my composure in the face of tantrums, so I've gotten better at regulating my emotions. Less free time means I set smaller goals, and steady progress adds up.
 
-The most Chaos Monkey-like effect of all is in how I plan my time. Little kids are sick a _lot_ -- that's how you bootstrap an immune system, after all. Hardly a month goes by where we don't have at least one week of someone being sick. Instead of terminating a random server in my data center, viruses cut random days out of my calendar.
+The most Chaos Monkey-like effect of all is in how I plan my time. Little kids are sick a _lot_ -- that's how you bootstrap an immune system, after all[^1]. Hardly a month goes by where we don't have at least one week of someone being sick. Instead of terminating a random server in my data center, viruses cut random days out of my calendar.
 
 I hate missing commitments I've made, but that used to be my norm. Excitement about my projects led to planning more than I could really accomplish. Now, having been burned too many times by losing a critical workday caring for a sick kid, my prep for the week isn't done until I've played out the consequences of possible sick days in my head.
 
 What has to get done first, as insurance? What could be delegated? What nice-to-have is going to be the crumple zone in my to-do list? I'm far from perfect, but certainly more reliable than I was before having kids.
 
-I don't actually recommend fatherhood for its life hack value. But sometimes, I need to remind myself that being a dad isn't a zero sum game against the rest of my identity.
+I don't actually recommend fatherhood for its life hack value. But sometimes, I need to remind myself that being a dad isn't a zero sum game against the rest of my identity. My kids are chaos engineering me into being a better person for them. Lucky me — I like that guy, too.
+
+[^1]: My one-year old daughter has, in fact, been sick _three times_ since I started my first draft.
