@@ -37,6 +37,6 @@ I hate missing commitments I've made, but that used to be my norm. Excitement ab
 
 What has to get done first, as insurance? What could be delegated? What nice-to-have is going to be the crumple zone in my to-do list? I'm far from perfect, but certainly more reliable than I was before having kids.
 
-I don't actually recommend fatherhood for its life hack value. But sometimes, I need to remind myself that being a dad isn't a zero sum game against the rest of my identity. My kids are chaos engineering me into being a better person for them. Lucky me — I like that guy, too.
+I don't actually recommend fatherhood for its life hack value. But sometimes, I need to remind myself that being a dad isn't a zero sum game against the rest of my identity. My kids are chaos engineering me into being a better person for them. Lucky me — I like that guy too.
 
 [^1]: My one-year old daughter has, in fact, been sick _three times_ since I started my first draft.
