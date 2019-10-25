@@ -29,7 +29,7 @@ I spend a little time every day browsing Evernote and free associating between n
 
 Once I feel an argument form, I try to linearize it into an outline. I intend to bounce back and forth between the collage and outline until the argument seems sound and the structure feels ready. At that point, it's time to write a draft.
 
-[1]: https://the.marginalia.club
+[1]: https://themarginaliaclub.substack.com/
 [2]: https://austinkleon.com/2018/02/19/notebook-turducken/
 [3]: https://www.literatureandlatte.com/scapple/overview
 
