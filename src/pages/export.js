@@ -68,6 +68,7 @@ export default ({ data }) => {
         id: postId,
         author_id: "1",
         title: node.frontmatter.title,
+        slug: node.fields.slug,
         mobiledoc: JSON.stringify(toMobileDoc(node)),
         status: "published",
         published_at: Date.parse(node.fields.date) /* convert */
