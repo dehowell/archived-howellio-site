@@ -9,7 +9,7 @@ I just started reading Manuel DeLanda's [new book][1], _Philosophical Chemistry_
 
 He has a method for modeling an individual scientific field, whose main elements are, the domain of phenomena, the community of practitioners, the instruments and techniques used by practioners to explore the domain, and the social context in which practioners operate.
 
-![](delanda_sketchnotes.jpg)
+![](/content/images/2015/11/delanda_sketchnotes.jpg)
 
 His aim is to test this model by tracing the development of chemistry from 1750 to 1900, through its textbooks.
 
