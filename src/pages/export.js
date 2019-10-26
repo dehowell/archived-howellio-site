@@ -43,14 +43,16 @@ export default ({ data }) => {
 
   let isReading = [];
 
-  // IMAGES in Ghost end up in relatives paths like this
-  // /content/images/2019/10/editorial_process-2.png
-
   ghostExport.data.posts = data.allMarkdownRemark.edges.map(
     ({ node }, index) => {
       let postId = `${index}`;
 
-      if (node.frontmatter.title.indexOf("Readings: ") == 0) {
+      let isReadingsNode = node.frontmatter.title.indexOf("Readings: ") == 0;
+      let slug = isReadingsNode
+        ? node.fields.slug.slice(1, -10).replace(/\//g, "-")
+        : node.fields.slug.slice(12, -1);
+
+      if (isReadingsNode) {
         isReading.push(postId);
       }
 
@@ -58,6 +60,7 @@ export default ({ data }) => {
         id: postId,
         author_id: "1",
         title: node.frontmatter.title,
+        slug: slug,
         mobiledoc: JSON.stringify(toMobileDoc(node)),
         status: "published",
         published_at: Date.parse(node.fields.date) /* convert */
@@ -65,7 +68,7 @@ export default ({ data }) => {
     }
   );
 
-  /* apply the imported tag to every post */
+  /* Apply tags */
   ghostExport.data.posts_tags = [
     ...isReading.map(postId => ({ tag_id: "1", post_id: postId }))
   ];
