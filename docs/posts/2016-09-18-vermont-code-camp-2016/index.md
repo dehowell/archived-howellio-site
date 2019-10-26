@@ -7,7 +7,7 @@ date: 2016-09-18T14:59:53-04:00
 
 I gave the talk "Seeing the Matrix with tcpdump", which was all about how to peak under the head of application protocols like HTTP using tools for troubleshooting TCP connections. Coincidentally, Julia Evans (whom I was citing in my own slides) gave talk on a variety of debugging tools the day before at [Strange Loop][4]. If you saw and enjoyed my talk, I'm guessing you'll like hers.
 
-![](vtcodecamp2016.png)
+![](/content/images/2016/09/vtcodecamp2016.png)
 
 You can see the sources for my slides on [GitHub][2]. Since I used [Deckset][3], it's all Markdown and image files for my diagrams.
 

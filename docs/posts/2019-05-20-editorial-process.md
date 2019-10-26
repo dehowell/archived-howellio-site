@@ -16,14 +16,14 @@ Austin Kleon has a method of nested journalling practices, using his ["notebook 
 I'm plotting out my own version of this, but building from the raw material of my highlights, underlined passages, and marginalia in the things I read. All of those things go into Evernote, which I think of as the compost bin of my interests.
 
 <figure>
-  <img src="/img/2019/05/marginalia_therapy.jpg" alt="Marginalia is therapeutic"/>
+  <img src="/content/images/2019/05/marginalia_therapy.jpg" alt="Marginalia is therapeutic"/>
   <figcaption>Marginalia is therapeutic</figcaption>
 </figure>
 
 I spend a little time every day browsing Evernote and free associating between notes. Notes from a blog post trigger a "this makes me think of…" hunch leading me to a related book, which leads back to another article from months earlier. If I get a good chain of hunches going, I copy the highlights to a [Scapple board][3], map out the connections, and keeping riff on the theme.
 
 <figure>
-  <img src="/img/2019/05/scapple_issue03.png" alt="Marginalia Club Issue 3 Mood Board">
+  <img src="/content/images/2019/05/scapple_issue03.png" alt="Marginalia Club Issue 3 Mood Board">
   <figcaption>The Marginalia Club Issue #3 — In Progress </figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Once I feel an argument form, I try to linearize it into an outline. I intend to
 [3]: https://www.literatureandlatte.com/scapple/overview
 
 <figure>
-  <img src="/img/2019/05/editorial_process.png" alt="Editorial Workflow">
+  <img src="/content/images/2019/05/editorial_process.png" alt="Editorial Workflow">
   <figcaption>The Marginalia Club editorial workflow</figcaption>
 </figure>
 
