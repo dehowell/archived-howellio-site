@@ -35,25 +35,13 @@ export default ({ data }) => {
       tags: [
         {
           id: "1",
-          name: "readings"
-        },
-        {
-          id: "2",
-          name: "Imported from Gatsby"
-        },
-        {
-          id: "3",
-          name: "Contains Image"
+          name: "Readings"
         }
       ]
     }
   };
 
-  let hasImages = [];
   let isReading = [];
-
-  // IMAGES in Ghost end up in relatives paths like this
-  // /content/images/2019/10/editorial_process-2.png
 
   ghostExport.data.posts = data.allMarkdownRemark.edges.map(
     ({ node }, index) => {
@@ -63,15 +51,10 @@ export default ({ data }) => {
         isReading.push(postId);
       }
 
-      if (node.html.indexOf("<img") > 0) {
-        hasImages.push(postId);
-      }
-
       return {
         id: postId,
         author_id: "1",
         title: node.frontmatter.title,
-        slug: node.fields.slug,
         mobiledoc: JSON.stringify(toMobileDoc(node)),
         status: "published",
         published_at: Date.parse(node.fields.date) /* convert */
@@ -81,11 +64,6 @@ export default ({ data }) => {
 
   /* apply the imported tag to every post */
   ghostExport.data.posts_tags = [
-    ...ghostExport.data.posts.map(post => ({
-      tag_id: "2",
-      post_id: post.id
-    })),
-    ...hasImages.map(postId => ({ tag_id: "3", post_id: postId })),
     ...isReading.map(postId => ({ tag_id: "1", post_id: postId }))
   ];
 
