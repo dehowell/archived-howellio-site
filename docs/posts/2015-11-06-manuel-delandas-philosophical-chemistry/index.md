@@ -7,12 +7,7 @@ I just started reading Manuel DeLanda's [new book][1], _Philosophical Chemistry_
 
 > There is no such thing as Science. The word "Science" refers to a reified generality that together with others, like Nature and Culture, has been a constant source of false problems: are controversies in Science decided by Nature or Culture? Avoiding badly posed problems requires that we replace Science with a _population of individual scientific fields_, each with its own concepts, statements, significant problems, taxonomic and explanatory schemas.
 
-He has a method for modeling an individual scientific field, whose main elements are:
-
-- the domain of phenomena
-- the community of practitioners
-- the instruments and techniques used by practioners to explore the domain
-- the social context in which practioners operate
+He has a method for modeling an individual scientific field, whose main elements are, the domain of phenomena, the community of practitioners, the instruments and techniques used by practioners to explore the domain, and the social context in which practioners operate.
 
 ![](delanda_sketchnotes.jpg)
 

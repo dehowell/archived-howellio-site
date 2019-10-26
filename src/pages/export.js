@@ -40,15 +40,32 @@ export default ({ data }) => {
         {
           id: "2",
           name: "Imported from Gatsby"
+        },
+        {
+          id: "3",
+          name: "Contains Image"
         }
       ]
     }
   };
 
+  let hasImages = [];
+  let isReading = [];
+
   ghostExport.data.posts = data.allMarkdownRemark.edges.map(
     ({ node }, index) => {
+      let postId = `${index}`;
+
+      if (node.frontmatter.title.indexOf("Readings: ") == 0) {
+        isReading.push(postId);
+      }
+
+      if (node.html.indexOf("<img") > 0) {
+        hasImages.push(postId);
+      }
+
       return {
-        id: `${index}`,
+        id: postId,
         author_id: "1",
         title: node.frontmatter.title,
         mobiledoc: JSON.stringify(toMobileDoc(node)),
@@ -59,10 +76,14 @@ export default ({ data }) => {
   );
 
   /* apply the imported tag to every post */
-  ghostExport.data.posts_tags = ghostExport.data.posts.map(post => ({
-    tag_id: "2",
-    post_id: post.id
-  }));
+  ghostExport.data.posts_tags = [
+    ...ghostExport.data.posts.map(post => ({
+      tag_id: "2",
+      post_id: post.id
+    })),
+    ...hasImages.map(postId => ({ tag_id: "3", post_id: postId })),
+    ...isReading.map(postId => ({ tag_id: "1", post_id: postId }))
+  ];
 
   return (
     <pre>
@@ -95,6 +116,7 @@ export const pageQuery = graphql`
             date
           }
           rawMarkdownBody
+          html
         }
       }
     }
