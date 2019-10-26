@@ -43,6 +43,9 @@ export default ({ data }) => {
 
   let isReading = [];
 
+  // IMAGES in Ghost end up in relatives paths like this
+  // /content/images/2019/10/editorial_process-2.png
+
   ghostExport.data.posts = data.allMarkdownRemark.edges.map(
     ({ node }, index) => {
       let postId = `${index}`;
